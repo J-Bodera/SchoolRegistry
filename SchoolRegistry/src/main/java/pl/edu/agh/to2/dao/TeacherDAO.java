@@ -31,5 +31,15 @@ public class TeacherDAO extends GenericDAO<Teacher> {
         return teacher;
     }
 
+    public Teacher findByName(String firstName, String lastName){
+        EntityManager em = SessionService.getEntityManager();
+        EntityTransaction etx = SessionService.getEntityTransaction();
+        etx.begin();
+        Teacher teacher = em.createQuery("SELECT t FROM Teacher t WHERE t.lastName = :lastName and t.firstName = :firstName", Teacher.class)
+                .setParameter("lastName", lastName).setParameter("firstName", firstName).getSingleResult();
+        etx.commit();
+        return teacher;
+    }
+
 
 }
