@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="SchoolRegistry">
+    <output-path>$PROJECT_DIR$/classes/artifacts/SchoolRegistry</output-path>
+    <root id="root">
+      <element id="archive" name="SchoolRegistry.jar">
+        <element id="module-output" name="SchoolRegistry" />
+      </element>
+    </root>
+  </artifact>
+</component>
