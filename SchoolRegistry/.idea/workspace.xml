@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1badf78a-0d52-41e7-82a1-f83659cac0f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SchoolRegistry.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolRegistry.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb.db" beforeDir="false" afterPath="$PROJECT_DIR$/mydb.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/StudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/StudentGroupDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/StudentGroupDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/TeacherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/TeacherDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/agh/to2/hib/AppTest.java" beforeDir="false" />
-    </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="1badf78a-0d52-41e7-82a1-f83659cac0f2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -38,248 +31,15 @@
         <item name="mydb.db" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="mydb.db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="mydb.db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="Course: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="mydb.db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="Student: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
     </expand>
     <select />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="888077975">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.54" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="5" />
-          <entry key="course" value="1" />
-          <entry key="grade" value="2" />
-          <entry key="hibernate_sequences" value="1" />
-          <entry key="java" value="29" />
-          <entry key="message" value="1" />
-          <entry key="meta" value="1" />
-          <entry key="person" value="4" />
-          <entry key="sql" value="3" />
-          <entry key="sqlite_master" value="1" />
-          <entry key="student" value="4" />
-          <entry key="studentgroup" value="1" />
-          <entry key="teacher" value="4" />
-          <entry key="xml" value="13" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="5" />
-          <entry key="Database Element" value="19" />
-          <entry key="JAVA" value="29" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Scratch" value="3" />
-          <entry key="XML" value="13" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="class" value="2" />
-          <entry key="java" value="2925" />
-          <entry key="xml" value="103" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="2925" />
-          <entry key="XML" value="103" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-1751126694">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.22" value="1" />
-          <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.313" value="1" />
-          <entry key="project.opened" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="3359" />
-          <entry key="xml" value="132" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="3359" />
-          <entry key="XML" value="132" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="3" />
-          <entry key="course" value="2" />
-          <entry key="course_person" value="2" />
-          <entry key="grade" value="1" />
-          <entry key="java" value="57" />
-          <entry key="person" value="1" />
-          <entry key="person_course" value="2" />
-          <entry key="sql" value="2" />
-          <entry key="student" value="2" />
-          <entry key="teacher" value="1" />
-          <entry key="xml" value="10" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="Database Element" value="11" />
-          <entry key="JAVA" value="57" />
-          <entry key="Scratch" value="2" />
-          <entry key="XML" value="10" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/CourseDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pl/edu/agh/to2/hib/DaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
-                <element signature="e#407#408#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#487#488#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/StudentDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/StudentGroupDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/TeacherDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://f5c0d532-ee6c-49f9-bea0-b5e95cf34de3/schema/main/table/student">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://f5c0d532-ee6c-49f9-bea0-b5e95cf34de3/schema/main/table/person">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -288,71 +48,6 @@
       <find>createEntityManagerFactory</find>
     </findStrings>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$PROJECT_DIR$/../../example-master" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../lab-rx" value="PREVIEW" />
-      </map>
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/srccodes/example/hibernate/Contact.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/srccodes/example/hibernate/package-info.java" />
-        <option value="$PROJECT_DIR$/src/main/java/data/package-info.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hibernate/dialect/SQLiteDialect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/srccodes/example/hibernate/App.java" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/data/Student.java" />
-        <option value="$PROJECT_DIR$/src/main/java/data/Teacher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/data/Grade.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hib/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/data/StudentGroup.java" />
-        <option value="$PROJECT_DIR$/src/main/java/data/Person.java" />
-        <option value="$PROJECT_DIR$/src/main/java/data/Remark.java" />
-        <option value="$PROJECT_DIR$/src/main/java/data/Course.java" />
-        <option value="$PROJECT_DIR$/src/main/java/data/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/data/Person.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pl/edu/agh/to2/hib/AppTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hibernate/dialect/SQLiteDialectIdentityColumnSupport.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Grade.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Remark.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/StudentGroup.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Course.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Person.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Student.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/hib/Tests.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/GradeDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/MessageDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/RemarkDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/session/SessionService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/GenericDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Teacher.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/CourseDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/hib/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/TeacherDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/StudentDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/StudentGroupDAO.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pl/edu/agh/to2/hib/DaoTest.java" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -360,184 +55,51 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="HibernateHelloWorld" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-6" />
-    <option name="width" value="1050" />
-    <option name="height" value="1032" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="HibernateHelloWorld" type="58d84e3e:PackageViewProjectNode" />
-              <item name="HibernateHelloWorld" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="HibernateHelloWorld" type="58d84e3e:PackageViewProjectNode" />
-              <item name="HibernateHelloWorld" type="616d4139:PackageViewModuleNode" />
-              <item name="data" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="SchoolRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SchoolRegistry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SchoolRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SchoolRegistry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SchoolRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SchoolRegistry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SchoolRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SchoolRegistry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SchoolRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SchoolRegistry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dialect" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SchoolRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SchoolRegistry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="to2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SchoolRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SchoolRegistry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="to2" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SchoolRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SchoolRegistry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SchoolRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SchoolRegistry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SchoolRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SchoolRegistry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="to2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SchoolRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SchoolRegistry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="to2" type="462c0819:PsiDirectoryNode" />
-              <item name="hib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SchoolRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="SchoolRegistry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectId" id="1UwVCLfRbcCACjnAUUIxscb6o53" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="persist&#9;FILE&#9;file://C:/Users/astar/Desktop/SchoolRegistry/SchoolRegistry/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml&#10;persistence.xml&#9;FILE&#9;file://C:/Users/astar/Downloads/HibernateSqlite-master/HibernateHelloWorld/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml&#10;package-info&#9;ACTION&#9;NewPackageInfo" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575458858714" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575376431728" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/hibernate-entitymanager-4.0.1.Final.jar!/" />
+    <property name="last_opened_file_path" value="C:/Program Files/Java/javafx-sdk-11.0.2/lib/javafx.swing.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.25483093" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pl.edu.agh.to2" />
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Studia\Informatyka\TO2\SchoolRegistry\src\main\java\pl\edu\agh\to2\view" />
+      <recent name="D:\Studia\Informatyka\TO2\SchoolRegistry\src\main\java\pl\edu\agh\to2" />
       <recent name="C:\Users\astar\Desktop\SchoolRegistry\SchoolRegistry\src\main\resources" />
       <recent name="C:\Users\astar\Desktop\SchoolRegistry\SchoolRegistry\src" />
       <recent name="C:\Users\astar\Desktop\SchoolRegistry\SchoolRegistry\src\main" />
-      <recent name="C:\Users\astar\Desktop\SchoolRegistry\SchoolRegistry\src\main\java\pl\edu\agh\to2" />
-      <recent name="C:\Users\astar\Desktop\SchoolRegistry\SchoolRegistry\src\main\java\pl\edu\agh\to2\session" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.DaoTest">
-    <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.edu.agh.to2.hib.App" />
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.edu.agh.to2.App" />
       <module name="SchoolRegistry" />
+      <option name="VM_PARAMETERS" value="--module-path $USER_HOME$/Programy/IntelliJ/jar/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.edu.agh.to2.hib.*" />
+          <option name="PATTERN" value="com.srccodes.example.hibernate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -546,11 +108,11 @@
       </method>
     </configuration>
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.srccodes.example.hibernate.App" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.agh.to2.App" />
       <module name="SchoolRegistry" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.srccodes.example.hibernate.*" />
+          <option name="PATTERN" value="pl.edu.agh.to2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -571,33 +133,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SchoolRegistry" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.edu.agh.to2.hib.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.edu.agh.to2.hib" />
-      <option name="MAIN_CLASS_NAME" value="pl.edu.agh.to2.hib.DaoTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.App" />
-      <item itemvalue="Application.App (1)" />
-      <item itemvalue="JUnit.DaoTest" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DaoTest" />
-        <item itemvalue="Application.App (1)" />
-        <item itemvalue="Application.App (1)" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -612,501 +166,91 @@
       <workItem from="1575296966498" duration="13207000" />
       <workItem from="1575311401689" duration="6400000" />
       <workItem from="1575322394421" duration="13581000" />
-      <workItem from="1575367566741" duration="8688000" />
-      <workItem from="1575455527296" duration="226000" />
-      <workItem from="1575455939623" duration="2977000" />
+      <workItem from="1575367566741" duration="8299000" />
+      <workItem from="1576267525737" duration="9594000" />
+      <workItem from="1576286001610" duration="1848000" />
+      <workItem from="1576287944239" duration="245000" />
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="DaoTest - 2019.12.04 at 12h 05m 46s.xml">
-      <configuration name="DaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoTest - 2019.12.04 at 12h 07m 40s.xml">
-      <configuration name="DaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoTest - 2019.12.04 at 12h 10m 37s.xml">
-      <configuration name="DaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoTest - 2019.12.04 at 12h 11m 55s.xml">
-      <configuration name="DaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoTest - 2019.12.04 at 12h 12m 40s.xml">
-      <configuration name="DaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoTest - 2019.12.04 at 12h 21m 59s.xml">
-      <configuration name="DaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoTest - 2019.12.04 at 12h 24m 53s.xml">
-      <configuration name="DaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoTest - 2019.12.04 at 12h 26m 44s.xml">
-      <configuration name="DaoTest" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45079000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info id="Persistence" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.23238866" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="0" weight="0.3291815" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.44128114" />
-      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.14590748" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.3985765" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="right" id="Bean Validation" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.05991903" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.25182188" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.24939272" />
-      <window_info anchor="right" id="Palette" order="7" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info id="Persistence" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.25587043" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="0" weight="0.3291815" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.44128114" />
-      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.3291815" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.19217081" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.3985765" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="right" id="Bean Validation" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.005668016" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.25182188" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.24939272" />
-      <window_info anchor="right" id="Palette" order="7" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="WindowStateProjectService">
+    <state x="311" y="58" width="800" height="677" key="#Inspections" timestamp="1576286605385">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="311" y="58" width="800" height="677" key="#Inspections/67.27.1299.741@67.27.1299.741" timestamp="1576286605385" />
+    <state x="200" y="70" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576288366857">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="147" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.920@0.0.1440.920" timestamp="1576284728900" />
+    <state x="200" y="70" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1576288366857" />
+    <state x="530" y="125" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1576273868110">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="530" y="125" key="#com.intellij.ide.macro.MacrosDialog/0.0.1440.920@0.0.1440.920" timestamp="1576273868110" />
+    <state x="480" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1576283594628">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="480" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.920@0.0.1440.920" timestamp="1576283594628" />
+    <state x="570" y="349" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576267564463">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="570" y="349" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.920@0.0.1440.920" timestamp="1576267564463" />
+    <state x="518" y="320" width="404" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1576268008883">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="518" y="320" width="404" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.920@0.0.1440.920" timestamp="1576268008883" />
+    <state x="669" y="167" key="FileChooserDialogImpl" timestamp="1576285472044">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="669" y="167" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1576285472044" />
+    <state width="1161" height="179" key="GridCell.Tab.0.bottom" timestamp="1576288098000">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="675" height="263" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1576285068563" />
+    <state width="1161" height="179" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576288098000" />
+    <state width="1161" height="179" key="GridCell.Tab.0.center" timestamp="1576288097999">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="675" height="263" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1576285068563" />
+    <state width="1161" height="179" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1576288097999" />
+    <state width="1161" height="179" key="GridCell.Tab.0.left" timestamp="1576288097998">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="675" height="263" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1576285068562" />
+    <state width="1161" height="179" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1576288097998" />
+    <state width="1161" height="179" key="GridCell.Tab.0.right" timestamp="1576288097999">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="675" height="263" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1576285068563" />
+    <state width="1161" height="179" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1576288097999" />
+    <state x="205" y="114" key="Maven.ArtifactSearchDialog" timestamp="1576271994619">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="205" y="114" key="Maven.ArtifactSearchDialog/0.0.1440.920@0.0.1440.920" timestamp="1576271994619" />
+    <state x="296" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1576287844209">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="119" y="12" width="989" height="851" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1576284683614" />
+    <state x="296" y="27" width="1024" height="741" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1576287844209" />
+    <state x="443" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1576287945246">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="417" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.920@0.0.1440.920" timestamp="1576267550971" />
+    <state x="443" y="256" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1576287945246" />
+    <state x="171" y="81" key="new project wizard" timestamp="1576285480244">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="171" y="81" key="new project wizard/0.0.1440.920@0.0.1440.920" timestamp="1576285480244" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1576287104508">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1576287104508" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13551" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/dataSources.local.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c368b9fe-d005-4627-b2af-5f0a74bb90fc/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://c368b9fe-d005-4627-b2af-5f0a74bb90fc/schema/main/table/person" />
-    <entry file="das://c368b9fe-d005-4627-b2af-5f0a74bb90fc/schema/main/table/teacher" />
-    <entry file="file://$PROJECT_DIR$/target/classes/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c368b9fe-d005-4627-b2af-5f0a74bb90fc/schema/main/table/student" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hibernate/dialect/SQLiteDialectIdentityColumnSupport.java" />
-    <entry file="das://c368b9fe-d005-4627-b2af-5f0a74bb90fc/schema/main/table/course" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/68454774-edfa-42de-ae37-e22b1ac21897/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://5a85eccf-7bd7-4872-9901-d731d77c7a61/schema/main/table/grade" />
-    <entry file="das://5a85eccf-7bd7-4872-9901-d731d77c7a61/schema/main/table/person_course" />
-    <entry file="das://5a85eccf-7bd7-4872-9901-d731d77c7a61/schema/main/table/course_person" />
-    <entry file="das://f5c0d532-ee6c-49f9-bea0-b5e95cf34de3/schema/main/table/course_person" />
-    <entry file="das://f5c0d532-ee6c-49f9-bea0-b5e95cf34de3/schema/main/table/person_course">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f5c0d532-ee6c-49f9-bea0-b5e95cf34de3/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f5c0d532-ee6c-49f9-bea0-b5e95cf34de3/schema/main/table/course">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Grade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Remark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/StudentGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/hib/SampleDataGenerator.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/hib/Tests.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar!/javax/persistence/Persistence.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/hibernate-entitymanager-4.0.1.Final.jar!/org/hibernate/ejb/HibernatePersistence.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="35" column="35" lean-forward="true" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/GenericDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/session/SessionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Teacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="61" lean-forward="true" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/MessageDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" selection-start-line="8" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/RemarkDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f5c0d532-ee6c-49f9-bea0-b5e95cf34de3/schema/main/table/teacher">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/hib/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/GradeDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f5c0d532-ee6c-49f9-bea0-b5e95cf34de3/schema/main/table/student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f5c0d532-ee6c-49f9-bea0-b5e95cf34de3/schema/main/table/person">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/TeacherDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/StudentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/StudentGroupDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/edu/agh/to2/hib/DaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/CourseDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Hibernate</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>junit:junit:4.12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>SchoolRegistry</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

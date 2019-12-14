@@ -1,18 +1,23 @@
 package pl.edu.agh.to2;
 
+import java.util.Properties;
+
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
 import pl.edu.agh.to2.controller.AppController;
-import pl.edu.agh.to2.controller.LoginController;
 import pl.edu.agh.to2.dao.CourseDAO;
 import pl.edu.agh.to2.dao.StudentDAO;
 import pl.edu.agh.to2.dao.StudentGroupDAO;
 import pl.edu.agh.to2.dao.TeacherDAO;
+import pl.edu.agh.to2.model.*;
 import pl.edu.agh.to2.session.SessionService;
+
+import static javafx.application.Application.launch;
 
 public class App extends Application {
     private Stage primaryStage;
@@ -42,4 +47,5 @@ public class App extends Application {
 
         launch(args);
 	}
+
 }

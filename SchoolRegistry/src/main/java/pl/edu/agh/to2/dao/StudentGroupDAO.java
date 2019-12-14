@@ -32,16 +32,5 @@ public class StudentGroupDAO extends GenericDAO<StudentGroup> {
         return studentGroup;
     }
 
-    public StudentGroup findByTutor(String firstName, String lastName){
-        EntityManager em = SessionService.getEntityManager();
-        EntityTransaction etx = SessionService.getEntityTransaction();
-        if(!etx.isActive())etx.begin();
-        TeacherDAO teacherDao = new TeacherDAO();
-        Teacher teacher = teacherDao.findByName(firstName, lastName);
-        StudentGroup studentGroup = em.createQuery("SELECT s FROM StudentGroup s WHERE s.tutor = :tutor", StudentGroup.class)
-                .setParameter("tutor", teacher).getSingleResult();
-        etx.commit();
-        return studentGroup;
-    }
 
 }

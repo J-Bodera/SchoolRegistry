@@ -7,6 +7,8 @@ import pl.edu.agh.to2.model.Teacher;
 public class AdminController {
     private AppController appController;
 
+    public AdminController() {}
+
     @FXML
     private TableView<Teacher> teachersTable;
 

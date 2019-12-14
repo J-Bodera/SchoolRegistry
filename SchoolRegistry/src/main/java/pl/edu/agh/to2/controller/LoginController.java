@@ -10,6 +10,8 @@ import javax.swing.*;
 public class LoginController {
     private AppController appController;
 
+    public LoginController() {}
+
     @FXML
     private TextField loginTextField;
 

@@ -21,8 +21,8 @@ public class AppController {
         try {
             this.primaryStage.setTitle("Logowanie");
 
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(App.class.getResource("view/LoginPane.fxml"));
+            FXMLLoader loader = new FXMLLoader(App.class.getClassLoader().getResource("LoginPane.fxml"));
+            //loader.setLocation(App.class.getResource("view/LoginPane.fxml"));
             AnchorPane rootLayout = (AnchorPane) loader.load();
 
             LoginController controller = loader.getController();
@@ -40,7 +40,7 @@ public class AppController {
         try {
             this.primaryStage.setTitle("Panel admina");
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(App.class.getResource("view/AdminPane.fxml"));
+            loader.setLocation(App.class.getClassLoader().getResource("AdminPane.fxml"));
             BorderPane adminLayout = (BorderPane) loader.load();
 
             AdminController controller = loader.getController();

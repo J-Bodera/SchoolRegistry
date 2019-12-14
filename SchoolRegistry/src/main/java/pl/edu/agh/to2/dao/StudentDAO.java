@@ -33,14 +33,4 @@ public class StudentDAO extends GenericDAO<Student> {
         return student;
     }
 
-    public Student findByName(String firstName, String lastName){
-        EntityManager em = SessionService.getEntityManager();
-        EntityTransaction etx = SessionService.getEntityTransaction();
-        etx.begin();
-        Student student = em.createQuery("SELECT s FROM Student s WHERE s.firstName = :firstName and s.lastName = :lastName" , Student.class)
-                .setParameter("firstName", firstName).setParameter("lastName", lastName).getSingleResult();
-        etx.commit();
-        return student;
-    }
-
 }
