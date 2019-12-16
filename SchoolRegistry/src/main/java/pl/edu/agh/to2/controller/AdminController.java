@@ -39,19 +39,17 @@ public class AdminController {
     private void initialize() {
         teachersTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 
-        first_nameColumn.setCellValueFactory(new PropertyValueFactory<>(Teacher.Columns.FIRST_NAME));
-        last_nameColumn.setCellValueFactory(new PropertyValueFactory<>(Teacher.Columns.LAST_NAME));
-        phoneColumn.setCellValueFactory(new PropertyValueFactory<>(Teacher.Columns.PHONE));
-        emailColumn.setCellValueFactory(new PropertyValueFactory<>(Teacher.Columns.EMAIL));
-        passwordColumn.setCellValueFactory(new PropertyValueFactory<>(Teacher.Columns.PASSWORD));
-
+        first_nameColumn.setCellValueFactory(data -> data.getValue().getFirstNameProperty());
+        last_nameColumn.setCellValueFactory(data -> data.getValue().getLastNameProperty());
+        phoneColumn.setCellValueFactory(data -> data.getValue().getPhoneProperty());
+        emailColumn.setCellValueFactory(data -> data.getValue().getEmailProperty());
+        passwordColumn.setCellValueFactory(data -> data.getValue().getPasswordProperty());
 
         teachersTable.setItems(teachers);
     }
 
     private ObservableList<Teacher> teachers = FXCollections.observableArrayList(
-            new Teacher("a", "b", "c", "d", "e")
-            );
+            new Teacher("a", "b", "c", "d", "e"));
 
     @FXML
     private void handleLogoutAction() {

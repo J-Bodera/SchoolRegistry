@@ -24,9 +24,8 @@ public class StudentDAO extends GenericDAO<Student> {
     }
 
     public Student findByStudentId(int studentId){
-        Student student = (Student) SessionService.getSession().createQuery("SELECT s FROM Student s WHERE s.studentId = :id")
+        return (Student) SessionService.getSession().createQuery("SELECT s FROM Student s WHERE s.studentId = :id")
                 .setParameter("id", studentId).list().get(0);
-        return student;
     }
 
 }

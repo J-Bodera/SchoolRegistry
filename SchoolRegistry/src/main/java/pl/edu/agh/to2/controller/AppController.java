@@ -3,7 +3,6 @@ package pl.edu.agh.to2.controller;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Border;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import pl.edu.agh.to2.App;
@@ -23,7 +22,7 @@ public class AppController {
 
             FXMLLoader loader = new FXMLLoader(App.class.getClassLoader().getResource("LoginPane.fxml"));
             //loader.setLocation(App.class.getResource("view/LoginPane.fxml"));
-            AnchorPane rootLayout = (AnchorPane) loader.load();
+            AnchorPane rootLayout = loader.load();
 
             LoginController controller = loader.getController();
             controller.setAppController(this);
@@ -41,7 +40,7 @@ public class AppController {
             this.primaryStage.setTitle("Panel admina");
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(App.class.getClassLoader().getResource("AdminPane.fxml"));
-            BorderPane adminLayout = (BorderPane) loader.load();
+            BorderPane adminLayout = loader.load();
 
             AdminController controller = loader.getController();
             controller.setAppController(this);
@@ -59,10 +58,10 @@ public class AppController {
             this.primaryStage.setTitle("Panel nauczyciela");
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(App.class.getClassLoader().getResource("TeacherPane.fxml"));
-            BorderPane TeacherLayout = (BorderPane) loader.load();
+            BorderPane TeacherLayout = loader.load();
 
-            TeacherController controller = loader.getController();
-            controller.setAppController(this);
+//            TeacherController controller = loader.getController();
+//            controller.setAppController(this);
 
             Scene scene = new Scene(TeacherLayout);
             primaryStage.setScene(scene);
@@ -78,10 +77,10 @@ public class AppController {
             this.primaryStage.setTitle("Panel ucznia");
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(App.class.getClassLoader().getResource("StudentPane.fxml"));
-            BorderPane StudentLayout = (BorderPane) loader.load();
+            BorderPane StudentLayout = loader.load();
 
-            StudentController controller = loader.getController();
-            controller.setAppController(this);
+//            StudentController controller = loader.getController();
+//            controller.setAppController(this);
 
             Scene scene = new Scene(StudentLayout);
             primaryStage.setScene(scene);

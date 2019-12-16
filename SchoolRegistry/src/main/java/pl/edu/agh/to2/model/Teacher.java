@@ -1,6 +1,7 @@
 package pl.edu.agh.to2.model;
 
 import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 import javax.persistence.*;
@@ -8,34 +9,21 @@ import javax.persistence.*;
 @Entity
 public class Teacher {
 
-    @Id
-    @GeneratedValue
-    @Column(name = Columns.TEACHER_ID)
-    private int teacherId;
-
-    @Column(name = Student.Columns.FIRST_NAME, nullable = false, length = 40)
-    private String firstName;
-
-    @Column(name = Student.Columns.LAST_NAME, nullable = false, length = 40)
-    private String lastName;
-
-    @Column(name = Student.Columns.PHONE, length = 9)
-    private String phone;
-
-    @Column(name = Student.Columns.EMAIL, nullable = false, length = 40)
-    private String email;
-
-    @Column(name = Student.Columns.PASSWORD, nullable = false, length = 20)
-    private String password;
+    private IntegerProperty teacherId;
+    private StringProperty firstName;
+    private StringProperty lastName;
+    private StringProperty phone;
+    private StringProperty email;
+    private StringProperty password;
 
     public Teacher(){}
 
     public Teacher(String firstName, String lastName, String phone, String email, String password) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.phone = phone;
-        this.email = email;
-        this.password = password;
+        this.firstName = new SimpleStringProperty(firstName);
+        this.lastName = new SimpleStringProperty(lastName);
+        this.phone = new SimpleStringProperty(phone);
+        this.email = new SimpleStringProperty(email);
+        this.password = new SimpleStringProperty(password);
     }
 
     public static class Columns {
@@ -47,51 +35,88 @@ public class Teacher {
         public static final String PASSWORD = "password";
     }
 
-    public int getTeacherId() {
-        return teacherId;
+    public int getTeacherId()
+    {
+        return teacherId.get();
     }
 
-    public void setTeacherId(int teacherId) {
-        this.teacherId = teacherId;
+    public void setTeacherId(int teacherId)
+    {
+        this.teacherId.set(teacherId);
     }
 
-    public String getFirstName() {
+    public String getFirstName()
+    {
+        return firstName.get();
+    }
+
+    public StringProperty getFirstNameProperty()
+    {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstName(String firstName)
+    {
+        this.firstName.set(firstName);
     }
 
-    public String getLastName() {
+    public String getLastName()
+    {
+        return lastName.get();
+    }
+
+    public StringProperty getLastNameProperty()
+    {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastName(String lastName)
+    {
+        this.lastName.set(lastName);
     }
 
-    public String getPhone() {
+    public String getPhone()
+    {
+        return phone.get();
+    }
+
+    public StringProperty getPhoneProperty()
+    {
         return phone;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setPhone(String phone)
+    {
+        this.phone.set(phone);
     }
 
-    public String getEmail() {
+    public String getEmail()
+    {
+        return email.get();
+    }
+
+    public StringProperty getEmailProperty()
+    {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmail(String email)
+    {
+        this.email.set(email);
     }
 
-    public String getPassword() {
+    public String getPassword()
+    {
+        return password.get();
+    }
+
+    public StringProperty getPasswordProperty()
+    {
         return password;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPassword(String password)
+    {
+        this.password.set(password);
     }
 }
