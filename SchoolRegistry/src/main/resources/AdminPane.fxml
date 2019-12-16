@@ -22,11 +22,11 @@
     <center>
         <TableView fx:id="teachersTable" prefHeight="350.0" prefWidth="585.0" BorderPane.alignment="CENTER">
             <columns>
-                <TableColumn fx:id="firstnameColumn" prefWidth="90" text="Imie" />
-                <TableColumn fx:id="lastnameColumn" prefWidth="90" text="Nazwisko" />
-                <TableColumn fx:id="loginColumn" prefWidth="90" text="Login" />
-                <TableColumn fx:id="emailColumn" prefWidth="150" text="E-mail" />
+                <TableColumn fx:id="first_nameColumn" prefWidth="90" text="Imie" />
+                <TableColumn fx:id="last_nameColumn" prefWidth="90" text="Nazwisko" />
                 <TableColumn fx:id="phoneColumn" prefWidth="80" text="Telefon" />
+                <TableColumn fx:id="emailColumn" prefWidth="150" text="E-mail" />
+                <TableColumn fx:id="passwordColumn" prefWidth="80" text="Hasło" />
             </columns>
         </TableView>
     </center>

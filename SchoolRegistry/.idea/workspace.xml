@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1badf78a-0d52-41e7-82a1-f83659cac0f2" name="Default Changelist" comment="" />
+    <list default="true" id="1badf78a-0d52-41e7-82a1-f83659cac0f2" name="Default Changelist" comment="last update">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f5c0d532-ee6c-49f9-bea0-b5e95cf34de3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f5c0d532-ee6c-49f9-bea0-b5e95cf34de3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb.db" beforeDir="false" afterPath="$PROJECT_DIR$/mydb.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/controller/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/MessageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/MessageDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/StudentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/TeacherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/TeacherDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/AdminPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AdminPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AdminPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AdminPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/controller/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/controller/AppController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/MessageDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/MessageDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/StudentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/StudentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/TeacherDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/TeacherDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Person$Columns.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Student$Columns.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Student$Columns.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Teacher$Columns.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Teacher$Columns.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Teacher.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +66,19 @@
         <item name="mydb.db" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mydb.db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mydb.db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="Student: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -43,10 +91,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>createEntityManagerFactory</find>
-    </findStrings>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -59,6 +105,7 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1UwVCLfRbcCACjnAUUIxscb6o53" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -66,6 +113,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="persist&#9;FILE&#9;file://C:/Users/astar/Desktop/SchoolRegistry/SchoolRegistry/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml&#10;persistence.xml&#9;FILE&#9;file://C:/Users/astar/Downloads/HibernateSqlite-master/HibernateHelloWorld/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml&#10;package-info&#9;ACTION&#9;NewPackageInfo" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -76,7 +124,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.25483093" />
+    <property name="project.structure.side.proportion" value="0.38850576" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -93,10 +141,10 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.edu.agh.to2.App" />
       <module name="SchoolRegistry" />
-      <option name="VM_PARAMETERS" value="--module-path $USER_HOME$/Programy/IntelliJ/jar/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path $USER_HOME$/Programy/IntelliJ/jar/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.swing,javafx.base,javafx.web" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.srccodes.example.hibernate.*" />
@@ -137,7 +185,6 @@
       <list>
         <item itemvalue="Application.App" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +193,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:mydb.db" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:mydb.db" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@28df07b3" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -170,22 +227,32 @@
       <workItem from="1576267525737" duration="9594000" />
       <workItem from="1576286001610" duration="1848000" />
       <workItem from="1576287944239" duration="245000" />
+      <workItem from="1576292077316" duration="1536000" />
+      <workItem from="1576445975244" duration="17969000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="last update" />
+    <option name="LAST_COMMIT_MESSAGE" value="last update" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="311" y="58" width="800" height="677" key="#Inspections" timestamp="1576286605385">
+    <state x="311" y="58" width="800" height="677" key="#Inspections" timestamp="1576456750204">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="58" width="800" height="677" key="#Inspections/67.27.1299.741@67.27.1299.741" timestamp="1576286605385" />
-    <state x="200" y="70" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576288366857">
+    <state x="311" y="58" width="800" height="677" key="#Inspections/67.27.1299.741@67.27.1299.741" timestamp="1576456750204" />
+    <state x="311" y="58" width="800" height="677" key="#Notifications" timestamp="1576509344901">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="311" y="58" width="800" height="677" key="#Notifications/67.27.1299.741@67.27.1299.741" timestamp="1576509344901" />
+    <state x="266" y="40" width="878" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576508578344">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="147" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.920@0.0.1440.920" timestamp="1576284728900" />
-    <state x="200" y="70" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1576288366857" />
+    <state x="266" y="40" width="878" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1576508578344" />
     <state x="530" y="125" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1576273868110">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -202,52 +269,72 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="518" y="320" width="404" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.920@0.0.1440.920" timestamp="1576268008883" />
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576460724842">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1576460724842" />
+    <state x="195" y="27" width="1090" height="741" key="CommitChangelistDialog2" timestamp="1576509082423">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="195" y="27" width="1090" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1576509082423" />
     <state x="669" y="167" key="FileChooserDialogImpl" timestamp="1576285472044">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="669" y="167" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1576285472044" />
-    <state width="1161" height="179" key="GridCell.Tab.0.bottom" timestamp="1576288098000">
+    <state width="1299" height="144" key="GridCell.Tab.0.bottom" timestamp="1576509082485">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="675" height="263" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1576285068563" />
-    <state width="1161" height="179" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576288098000" />
-    <state width="1161" height="179" key="GridCell.Tab.0.center" timestamp="1576288097999">
+    <state width="1299" height="144" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576509082485" />
+    <state width="1299" height="144" key="GridCell.Tab.0.center" timestamp="1576509082484">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="675" height="263" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1576285068563" />
-    <state width="1161" height="179" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1576288097999" />
-    <state width="1161" height="179" key="GridCell.Tab.0.left" timestamp="1576288097998">
+    <state width="1299" height="144" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1576509082484" />
+    <state width="1299" height="144" key="GridCell.Tab.0.left" timestamp="1576509082484">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="675" height="263" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1576285068562" />
-    <state width="1161" height="179" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1576288097998" />
-    <state width="1161" height="179" key="GridCell.Tab.0.right" timestamp="1576288097999">
+    <state width="1299" height="144" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1576509082484" />
+    <state width="1299" height="144" key="GridCell.Tab.0.right" timestamp="1576509082485">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="675" height="263" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1576285068563" />
-    <state width="1161" height="179" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1576288097999" />
+    <state width="1299" height="144" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1576509082485" />
     <state x="205" y="114" key="Maven.ArtifactSearchDialog" timestamp="1576271994619">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="205" y="114" key="Maven.ArtifactSearchDialog/0.0.1440.920@0.0.1440.920" timestamp="1576271994619" />
-    <state x="296" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1576287844209">
+    <state x="296" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1576330937610">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="119" y="12" width="989" height="851" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1576284683614" />
-    <state x="296" y="27" width="1024" height="741" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1576287844209" />
-    <state x="443" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1576287945246">
+    <state x="296" y="27" width="1024" height="741" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1576330937610" />
+    <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1576509310593">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1576509310593" />
+    <state x="443" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1576445974498">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="417" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.920@0.0.1440.920" timestamp="1576267550971" />
-    <state x="443" y="256" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1576287945246" />
+    <state x="443" y="256" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1576445974497" />
     <state x="171" y="81" key="new project wizard" timestamp="1576285480244">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="171" y="81" key="new project wizard/0.0.1440.920@0.0.1440.920" timestamp="1576285480244" />
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1576287104508">
+    <state x="67" y="27" width="500" height="741" key="refactoring.ChangeSignatureDialog" timestamp="1576460700319">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1576287104508" />
+    <state x="67" y="27" width="500" height="741" key="refactoring.ChangeSignatureDialog/67.27.1299.741@67.27.1299.741" timestamp="1576460700319" />
+    <state x="380" y="175" key="run.anything.popup" timestamp="1576447408450">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1576447408450" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1576448417146">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1576448417146" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

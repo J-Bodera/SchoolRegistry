@@ -35,6 +35,12 @@ public class LoginController {
         if (login.equals("admin") && password.equals("admin")) {
             appController.showAdminLayout();
         }
+        if (login.equals("nauczyciel1") && password.equals("n1")) {
+            appController.showTeacherLayout();
+        }
+        if (login.equals("uczen1") && password.equals("u1")) {
+            appController.showStudentLayout();
+        }
     }
 
     public void setAppController(AppController appController) {

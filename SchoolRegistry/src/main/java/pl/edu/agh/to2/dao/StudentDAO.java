@@ -24,12 +24,8 @@ public class StudentDAO extends GenericDAO<Student> {
     }
 
     public Student findByStudentId(int studentId){
-        EntityManager em = SessionService.getEntityManager();
-        EntityTransaction etx = SessionService.getEntityTransaction();
-        etx.begin();
-        Student student = em.createQuery("SELECT s FROM Student s WHERE s.studentId = :id", Student.class)
-                .setParameter("id", studentId).getSingleResult();
-        etx.commit();
+        Student student = (Student) SessionService.getSession().createQuery("SELECT s FROM Student s WHERE s.studentId = :id")
+                .setParameter("id", studentId).list().get(0);
         return student;
     }
 

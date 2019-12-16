@@ -34,17 +34,18 @@ public class App extends Application {
     }
 
 	public static void main(String[] args) {
-//	    SessionService.openSession();
+	    //SessionService.openSession();
 //        StudentDAO studentDAO = new StudentDAO();
 //        StudentGroupDAO studentGroupDAO = new StudentGroupDAO();
-//        TeacherDAO teacherDAO = new TeacherDAO();
-//        CourseDAO courseDAO = new CourseDAO();
+        //TeacherDAO teacherDAO = new TeacherDAO();
+     //  CourseDAO courseDAO = new CourseDAO();
 //
-//        teacherDAO.create("Anna", "Nowak", "123456789", "anowak@gmail.com", "abcd12345");
-//        courseDAO.create("Fizyka");
+ //       teacherDAO.create("Jan", "Nowak", "122456789", "jnowak@gmail.com", "abcd12345");
+        //courseDAO.create("Historia");
+       //courseDAO.create("Matematyka");
 //        studentGroupDAO.create("1A", teacherDAO.findByTeacherId(0));
 //        studentDAO.create("Jan", "Kowalski", "123456789", "jkowalski@gmail.com", "qwerty123", studentGroupDAO.findByName("1A"), 1);
-
+   //     SessionService.closeSession();
         launch(args);
 	}
 

@@ -12,10 +12,10 @@ public class Message {
     private int messageId;
 
     @ManyToOne
-    private Person sender;
+    private Teacher sender;
 
     @ManyToOne
-    private Person receiver;
+    private StudentGroup receiver;
 
     @Column(name = Columns.TEXT, nullable = false)
     private String text;
@@ -26,14 +26,14 @@ public class Message {
 
     public Message(){}
 
-    public Message(Person sender, Person receiver, String text){
+    public Message(Teacher sender, StudentGroup receiver, String text){
         this.sender = sender;
         this.receiver = receiver;
         this.text = text;
         this.date = new Date();
     }
 
-    public Message(Person sender, Person receiver, String text, Date date){
+    public Message(Teacher sender, StudentGroup receiver, String text, Date date){
         this.sender = sender;
         this.receiver = receiver;
         this.text = text;
@@ -54,19 +54,19 @@ public class Message {
         this.messageId = messageId;
     }
 
-    public Person getSender() {
+    public Teacher getSender() {
         return sender;
     }
 
-    public void setSender(Person sender) {
+    public void setSender(Teacher sender) {
         this.sender = sender;
     }
 
-    public Person getReceiver() {
+    public StudentGroup getReceiver() {
         return receiver;
     }
 
-    public void setReceiver(Person receiver) {
+    public void setReceiver(StudentGroup receiver) {
         this.receiver = receiver;
     }
 

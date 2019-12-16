@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class MessageDAO extends GenericDAO<Message> {
 
-    public boolean create(Person sender, Person receiver, String text, Date date) {
+    public boolean create(Teacher sender, StudentGroup receiver, String text, Date date) {
         try {
             save(new Message(sender, receiver, text, date));
             return true;

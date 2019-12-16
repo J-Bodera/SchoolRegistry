@@ -22,12 +22,9 @@ public class TeacherDAO extends GenericDAO<Teacher> {
     }
 
     public Teacher findByTeacherId(int teacherId){
-        EntityManager em = SessionService.getEntityManager();
-        EntityTransaction etx = SessionService.getEntityTransaction();
-        etx.begin();
-        Teacher teacher = em.createQuery("SELECT t FROM Teacher t WHERE t.teacherId = :id", Teacher.class)
-                .setParameter("id", teacherId).getSingleResult();
-        etx.commit();
+
+        Teacher teacher = (Teacher) SessionService.getSession().createQuery("SELECT t FROM Teacher t WHERE t.teacherId = :id")
+                .setParameter("id", teacherId).list().get(0);
         return teacher;
     }
 

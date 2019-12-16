@@ -53,4 +53,42 @@ public class AppController {
             e.printStackTrace();
         }
     }
+
+    public void showTeacherLayout() {
+        try {
+            this.primaryStage.setTitle("Panel nauczyciela");
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getClassLoader().getResource("TeacherPane.fxml"));
+            BorderPane TeacherLayout = (BorderPane) loader.load();
+
+            TeacherController controller = loader.getController();
+            controller.setAppController(this);
+
+            Scene scene = new Scene(TeacherLayout);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException e ) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public void showStudentLayout() {
+        try {
+            this.primaryStage.setTitle("Panel ucznia");
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getClassLoader().getResource("StudentPane.fxml"));
+            BorderPane StudentLayout = (BorderPane) loader.load();
+
+            StudentController controller = loader.getController();
+            controller.setAppController(this);
+
+            Scene scene = new Scene(StudentLayout);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException e ) {
+            e.printStackTrace();
+        }
+    }
+
 }
