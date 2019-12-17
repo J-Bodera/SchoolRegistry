@@ -33,17 +33,15 @@ public class AdminController {
     @FXML
     private TableColumn<Teacher, String> passwordColumn;
 
-
-
     @FXML
     private void initialize() {
         teachersTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 
-        first_nameColumn.setCellValueFactory(data -> data.getValue().getFirstNameProperty());
-        last_nameColumn.setCellValueFactory(data -> data.getValue().getLastNameProperty());
-        phoneColumn.setCellValueFactory(data -> data.getValue().getPhoneProperty());
-        emailColumn.setCellValueFactory(data -> data.getValue().getEmailProperty());
-        passwordColumn.setCellValueFactory(data -> data.getValue().getPasswordProperty());
+        first_nameColumn.setCellValueFactory(data -> data.getValue().firstNameProperty());
+        last_nameColumn.setCellValueFactory(data -> data.getValue().lastNameProperty());
+        phoneColumn.setCellValueFactory(data -> data.getValue().phoneProperty());
+        emailColumn.setCellValueFactory(data -> data.getValue().emailProperty());
+        passwordColumn.setCellValueFactory(data -> data.getValue().passwordProperty());
 
         teachersTable.setItems(teachers);
     }

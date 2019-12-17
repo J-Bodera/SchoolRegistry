@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+		" http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
 	<session-factory>
@@ -9,17 +9,16 @@
 		<property name="dialect">org.hibernate.dialect.SQLiteDialect</property>
 		<property name="connection.driver_class">org.sqlite.JDBC</property>
 		<property name="connection.url">jdbc:sqlite:mydb.db</property>
-		<property name="connection.username"></property>
-		<property name="connection.password"></property>
+		<property name="connection.username"/>
+		<property name="connection.password"/>
 		<property name="hibernate.hbm2ddl.auto">create</property>
 
-		<mapping class="pl.edu.agh.to2.model.Student"></mapping>
-		<mapping class="pl.edu.agh.to2.model.Teacher"></mapping>
-		<mapping class="pl.edu.agh.to2.model.Grade"></mapping>
-		<mapping class="pl.edu.agh.to2.model.Message"></mapping>
-		<mapping class="pl.edu.agh.to2.model.Remark"></mapping>
-		<mapping class="pl.edu.agh.to2.model.StudentGroup"></mapping>
-		<mapping class="pl.edu.agh.to2.model.Course"></mapping>
-
+		<mapping class="pl.edu.agh.to2.model.Student"/>
+		<mapping class="pl.edu.agh.to2.model.Teacher"/>
+		<mapping class="pl.edu.agh.to2.model.Grade"/>
+		<mapping class="pl.edu.agh.to2.model.Message"/>
+		<mapping class="pl.edu.agh.to2.model.Remark"/>
+		<mapping class="pl.edu.agh.to2.model.StudentGroup"/>
+		<mapping class="pl.edu.agh.to2.model.Course"/>
 	</session-factory>
 </hibernate-configuration>
