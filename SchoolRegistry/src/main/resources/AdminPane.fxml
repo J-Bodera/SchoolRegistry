@@ -1,58 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
-<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.agh.to2.controller.AdminController">
-    <top>
-        <Label text="Panel Admina" BorderPane.alignment="CENTER">
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.agh.to2.controller.AdminController">
+    <children>
+        <Label layoutX="219.0" layoutY="67.0" text="Panel admina" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="221.66666666666663">
             <font>
-                <Font size="20.0" />
+                <Font size="22.0" />
             </font>
-            <padding>
-                <Insets bottom="10.0" top="10.0" />
-            </padding>
         </Label>
-    </top>
-    <center>
-        <TableView fx:id="teachersTable" prefHeight="350.0" prefWidth="585.0" BorderPane.alignment="CENTER">
-            <columns>
-                <TableColumn fx:id="first_nameColumn" prefWidth="90" text="Imie" />
-                <TableColumn fx:id="last_nameColumn" prefWidth="90" text="Nazwisko" />
-                <TableColumn fx:id="phoneColumn" prefWidth="80" text="Telefon" />
-                <TableColumn fx:id="emailColumn" prefWidth="150" text="E-mail" />
-                <TableColumn fx:id="passwordColumn" prefWidth="80" text="Hasło" />
-            </columns>
-        </TableView>
-    </center>
-    <right>
-        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+        <Button fx:id="logoutButton" layoutX="457.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleLogoutAction" prefHeight="30.0" prefWidth="130.0" text="Wyloguj">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Label layoutX="151.0" layoutY="14.0" text="Dziennik elektroniczny">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <Line endX="499.0" layoutX="101.0" layoutY="113.0" startX="-100.0" stroke="#0062ff" strokeWidth="2.0" />
+        <GridPane layoutX="99.0" layoutY="170.0" prefHeight="100.0" prefWidth="400.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
             <children>
-                <Button fx:id="editButton" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Edytuj">
-                    <VBox.margin>
-                        <Insets bottom="5.0" left="3.0" right="3.0" top="5.0" />
-                    </VBox.margin>
+                <Button fx:id="teachersAdminButton" mnemonicParsing="false" prefHeight="103.0" prefWidth="133.0" text="Nauczyciele" onAction="#handleAdminTeachersAction">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </GridPane.margin>
                 </Button>
-                <Button fx:id="deleteButton" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Usuń">
-                    <VBox.margin>
-                        <Insets bottom="5.0" left="3.0" right="3.0" top="5.0" />
-                    </VBox.margin>
+                <Button fx:id="studentsAdminButton" mnemonicParsing="false" prefHeight="103.0" prefWidth="133.0" text="Uczniowie" GridPane.columnIndex="1" onAction="#handleAdminStudentsAction">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </GridPane.margin>
                 </Button>
-                <Button fx:id="addButton" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Dodaj">
-                    <VBox.margin>
-                        <Insets bottom="5.0" left="3.0" right="3.0" top="5.0" />
-                    </VBox.margin>
+                <Button fx:id="classesAdminButton" mnemonicParsing="false" prefHeight="103.0" prefWidth="133.0" text="Klasy" GridPane.columnIndex="2" onAction="#handleAdminClassesAction">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </GridPane.margin>
                 </Button>
-                <Button fx:id="logoutButton" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Wyloguj" onAction="#handleLogoutAction">
-                    <VBox.margin>
-                        <Insets bottom="5.0" left="3.0" right="3.0" top="180.0" />
-                    </VBox.margin>
-                </Button>
-            </children></VBox>
-    </right>
-</BorderPane>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

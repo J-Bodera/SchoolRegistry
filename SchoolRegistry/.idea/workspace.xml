@@ -2,40 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1badf78a-0d52-41e7-82a1-f83659cac0f2" name="Default Changelist" comment="last update">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/f5c0d532-ee6c-49f9-bea0-b5e95cf34de3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f5c0d532-ee6c-49f9-bea0-b5e95cf34de3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_1_4_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_4_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_0_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_4_4_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_15_0_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_1_spec_1_0_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolRegistry.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolRegistry.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydb.db" beforeDir="false" afterPath="$PROJECT_DIR$/mydb.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/controller/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/MessageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/MessageDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/StudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/TeacherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/dao/TeacherDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/to2/model/Teacher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/AdminPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AdminPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/LoginPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/LoginPane.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/AdminPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AdminPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LoginPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginPane.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/controller/AdminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/controller/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/controller/AppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/CourseDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/CourseDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/GradeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/GradeDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/MessageDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/MessageDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/RemarkDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/RemarkDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/StudentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/StudentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/StudentGroupDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/StudentGroupDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/TeacherDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/dao/TeacherDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Person$Columns.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Student$Columns.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Student$Columns.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Teacher$Columns.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Teacher$Columns.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/to2/model/Teacher.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +208,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:mydb.db" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@28df07b3" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@38d159c5" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -229,6 +236,7 @@
       <workItem from="1576287944239" duration="245000" />
       <workItem from="1576292077316" duration="1536000" />
       <workItem from="1576445975244" duration="17969000" />
+      <workItem from="1576585745756" duration="1964000" />
     </task>
     <servers />
   </component>
@@ -281,26 +289,42 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="669" y="167" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1576285472044" />
-    <state width="1299" height="144" key="GridCell.Tab.0.bottom" timestamp="1576509082485">
+    <state width="736" height="264" key="GridCell.Tab.0.bottom" timestamp="1576587704700">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="675" height="263" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1576285068563" />
-    <state width="1299" height="144" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576509082485" />
-    <state width="1299" height="144" key="GridCell.Tab.0.center" timestamp="1576509082484">
+    <state width="736" height="264" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576587704700" />
+    <state width="736" height="264" key="GridCell.Tab.0.center" timestamp="1576587704699">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="675" height="263" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1576285068563" />
-    <state width="1299" height="144" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1576509082484" />
-    <state width="1299" height="144" key="GridCell.Tab.0.left" timestamp="1576509082484">
+    <state width="736" height="264" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1576587704699" />
+    <state width="736" height="264" key="GridCell.Tab.0.left" timestamp="1576587704699">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="675" height="263" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1576285068562" />
-    <state width="1299" height="144" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1576509082484" />
-    <state width="1299" height="144" key="GridCell.Tab.0.right" timestamp="1576509082485">
+    <state width="736" height="264" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1576587704699" />
+    <state width="736" height="264" key="GridCell.Tab.0.right" timestamp="1576587704699">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="675" height="263" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1576285068563" />
-    <state width="1299" height="144" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1576509082485" />
+    <state width="736" height="264" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1576587704699" />
+    <state width="580" height="216" key="GridCell.Tab.1.bottom" timestamp="1576587661379">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="580" height="216" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576587661379" />
+    <state width="580" height="216" key="GridCell.Tab.1.center" timestamp="1576587661378">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="580" height="216" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1576587661378" />
+    <state width="580" height="216" key="GridCell.Tab.1.left" timestamp="1576587661378">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="580" height="216" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1576587661378" />
+    <state width="580" height="216" key="GridCell.Tab.1.right" timestamp="1576587661379">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="580" height="216" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1576587661379" />
     <state x="205" y="114" key="Maven.ArtifactSearchDialog" timestamp="1576271994619">
       <screen x="0" y="0" width="1440" height="920" />
     </state>

@@ -162,7 +162,6 @@
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Person_person_id
 courses_course_id</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="50" parent="10">
@@ -264,7 +263,6 @@ courses_course_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ColNames>StudentGroup_student_group_id
 courses_course_id</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="73" parent="14">

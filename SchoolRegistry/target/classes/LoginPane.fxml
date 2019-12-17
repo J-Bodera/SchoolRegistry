@@ -15,12 +15,12 @@
                 <Font size="22.0" />
             </font>
         </Label>
-        <TextField fx:id="loginTextField" layoutX="212.0" layoutY="185.0" promptText="Login">
+        <TextField fx:id="loginTextField" layoutX="212.0" layoutY="185.0" promptText="Login" onAction="#handleLoginAction">
             <font>
                 <Font size="14.0" />
             </font>
         </TextField>
-        <TextField fx:id="passwordTextField" layoutX="212.0" layoutY="225.0" promptText="Hasło">
+        <TextField fx:id="passwordTextField" layoutX="212.0" layoutY="225.0" promptText="Hasło" onAction="#handleLoginAction">
             <font>
                 <Font size="14.0" />
             </font>
