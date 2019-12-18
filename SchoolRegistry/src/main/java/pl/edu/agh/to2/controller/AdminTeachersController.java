@@ -8,7 +8,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import pl.edu.agh.to2.dao.TeacherDAO;
 import pl.edu.agh.to2.model.Teacher;
+import pl.edu.agh.to2.session.SessionService;
 
 public class AdminTeachersController {
     private AppController appController;
@@ -59,7 +61,7 @@ public class AdminTeachersController {
     }
 
     private ObservableList<Teacher> teachers = FXCollections.observableArrayList(
-            new Teacher("a", "b", "c", "d", "e"));
+            new TeacherDAO().findByTeacherName("Anna", "Nowak"));
 
     @FXML
     private void handlePrevAction(){

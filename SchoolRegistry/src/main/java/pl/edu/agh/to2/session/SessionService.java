@@ -20,6 +20,7 @@ public class SessionService {
     }
 
     public static Session getSession() {
+        if(!session.isOpen()) openSession();
         return session;
     }
 

@@ -36,8 +36,6 @@ public class App extends Application {
         TeacherDAO teacherDAO = new TeacherDAO();
         teacherDAO.create("Anna", "Nowak", "122456789", "jnowak@gmail.com", "abcd12345");
 
-        SessionService.closeSession();
-
         launch(args);
 	}
 
