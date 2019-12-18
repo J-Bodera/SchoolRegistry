@@ -1,5 +1,6 @@
 package pl.edu.agh.to2.dao;
 
+import javafx.beans.property.StringProperty;
 import org.hibernate.Query;
 import pl.edu.agh.to2.model.Grade;
 import pl.edu.agh.to2.model.Student;
@@ -51,12 +52,12 @@ public class StudentDAO extends GenericDAO<Student> {
         return result;
     }
 
-    public List<Teacher> findAll(){
+    public List<Student> findAll(){
         Query query = SessionService.getSession().createQuery("FROM Student s");
         return query.list();
     }
 
-    public List<Teacher> findAllFromStudentGroup(StudentGroup studentGroup){
+    public List<Student> findAllFromStudentGroup(StudentGroup studentGroup){
         Query query = SessionService.getSession().createQuery("FROM Student s WHERE s.studentGroup = :studentGroup")
                 .setParameter("studentGroup", studentGroup);
         return query.list();
@@ -65,6 +66,13 @@ public class StudentDAO extends GenericDAO<Student> {
     public Student findByStudentId(int studentId){
         Student student = (Student) SessionService.getSession().createQuery("SELECT s FROM Student s WHERE s.studentId = :id")
                 .setParameter("id", studentId).list().get(0);
+        return student;
+    }
+
+    public Student findByStudentName(String firstName, String lastName){
+        Student student = (Student) SessionService.getSession()
+                .createQuery("SELECT s FROM Student s WHERE s.firstName = :firstName AND s.lastName = :lastName")
+                .setParameter("firstName", firstName).setParameter("lastName", lastName).list().get(0);
         return student;
     }
 

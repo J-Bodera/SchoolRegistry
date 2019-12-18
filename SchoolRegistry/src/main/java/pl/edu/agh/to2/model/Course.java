@@ -1,25 +1,26 @@
 package pl.edu.agh.to2.model;
 
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@Table(name = "Course")
+@Access(AccessType.PROPERTY)
 public class Course {
 
-    @Id
-    @GeneratedValue
-    @Column(name = Columns.COURSE_ID)
-    private int courseId;
-
-    @Column(name = Columns.COURSE_NAME, nullable = false, length = 40)
-    private String courseName;
-
+    private IntegerProperty courseId = new SimpleIntegerProperty();
+    private StringProperty courseName;
 
     public Course(){}
 
     public Course(String courseName){
-        this.courseName = courseName;
+        this.courseName = new SimpleStringProperty(courseName);
     }
 
     public static class Columns {
@@ -27,15 +28,31 @@ public class Course {
         public static final String COURSE_NAME = "course_name";
     }
 
-    public int getCourseId() { return courseId; }
+    @Id
+    @GeneratedValue
+    @Column(name = Columns.COURSE_ID)
+    public int getCourseId() {
+        return courseId.get();
+    }
 
-    public void setCourseId(int courseId) { this.courseId = courseId; }
+    public IntegerProperty courseIdProperty() {
+        return courseId;
+    }
 
+    public void setCourseId(int courseId) {
+        this.courseId.set(courseId);
+    }
+
+    @Column(name = Columns.COURSE_NAME)
     public String getCourseName() {
+        return courseName.get();
+    }
+
+    public StringProperty courseNameProperty() {
         return courseName;
     }
 
     public void setCourseName(String courseName) {
-        this.courseName = courseName;
+        this.courseName.set(courseName);
     }
 }

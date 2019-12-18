@@ -46,7 +46,7 @@ public class TeacherDAO extends GenericDAO<Teacher> {
 
     public List<Teacher> findAll(){
         Query query = SessionService.getSession().createQuery("FROM Teacher t");
-        return query.list();
+        return query.getResultList();
     }
 
     public Teacher findByTeacherId(int teacherId){

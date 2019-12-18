@@ -36,6 +36,12 @@ public class App extends Application {
         TeacherDAO teacherDAO = new TeacherDAO();
         teacherDAO.create("Anna", "Nowak", "122456789", "jnowak@gmail.com", "abcd12345");
 
+        StudentGroupDAO studentGroupDAO = new StudentGroupDAO();
+        studentGroupDAO.create("1a", teacherDAO.findByTeacherName("Anna", "Nowak"));
+
+        StudentDAO studentDAO = new StudentDAO();
+        studentDAO.create("Anna", "Nowak", "122456789", "an@xx.com", "abc", studentGroupDAO.findByName("1a"), 3);
+
         SessionService.closeSession();
 
         launch(args);

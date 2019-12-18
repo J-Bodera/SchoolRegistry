@@ -1,54 +1,36 @@
 package pl.edu.agh.to2.model;
 
+import javafx.beans.property.*;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@Table(name="Student")
+@Access(AccessType.PROPERTY)
 public class Student {
 
-    @Id
-    @GeneratedValue
-    @Column(name = Columns.STUDENT_ID)
-    private int studentId;
+    private IntegerProperty studentId = new SimpleIntegerProperty();
+    private StringProperty firstName;
+    private StringProperty lastName;
+    private StringProperty phone;
+    private StringProperty email;
+    private StringProperty password;
+    private Property<StudentGroup> studentGroup;
+    private IntegerProperty number;
 
-    @Column(name = Columns.FIRST_NAME, nullable = false, length = 40)
-    private String firstName;
+    public Student() {
+    }
 
-    @Column(name = Columns.LAST_NAME, nullable = false, length = 40)
-    private String lastName;
-
-    @Column(name = Columns.PHONE, length = 9)
-    private String phone;
-
-    @Column(name = Columns.EMAIL, nullable = false, length = 40)
-    private String email;
-
-    @Column(name = Columns.PASSWORD, nullable = false, length = 20)
-    private String password;
-
-    @ManyToOne
-    private StudentGroup studentGroup;
-
-    @Column(name = Columns.NUMBER)
-    private int number;
-
-    @OneToMany(mappedBy = "student")
-    private Set<Grade> grades = new HashSet();
-
-    @OneToMany(mappedBy = "student")
-    private Set<Remark> remarks = new HashSet();
-
-    public Student(){}
-
-    public Student(String firstName, String lastName, String phone, String email, String password, StudentGroup studentGroup, int number){
-        this.studentGroup = studentGroup;
-        this.number = number;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.phone = phone;
-        this.email = email;
-        this.password = password;
+    public Student(String firstName, String lastName, String phone, String email, String password, StudentGroup studentGroup, int number) {
+        this.studentGroup = new SimpleObjectProperty<>(studentGroup);
+        this.number = new SimpleIntegerProperty(number);
+        this.firstName = new SimpleStringProperty(firstName);
+        this.lastName = new SimpleStringProperty(lastName);
+        this.phone = new SimpleStringProperty(phone);
+        this.email = new SimpleStringProperty(email);
+        this.password = new SimpleStringProperty(password);
     }
 
     public static class Columns {
@@ -61,83 +43,109 @@ public class Student {
         public static final String NUMBER = "number";
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = Columns.STUDENT_ID)
     public int getStudentId() {
+        return studentId.get();
+    }
+
+    public IntegerProperty studentIdProperty() {
         return studentId;
     }
 
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
+    public void setStudentId(int id) {
+        this.studentId.set(id);
     }
 
+    @Column(name = Columns.FIRST_NAME)
     public String getFirstName() {
+        return firstName.get();
+    }
+
+    public StringProperty firstNameProperty() {
         return firstName;
     }
 
     public void setFirstName(String firstName) {
-        this.firstName = firstName;
+        this.firstName.set(firstName);
     }
 
+    @Column(name = Columns.LAST_NAME)
     public String getLastName() {
+        return lastName.get();
+    }
+
+    public StringProperty lastNameProperty() {
         return lastName;
     }
 
     public void setLastName(String lastName) {
-        this.lastName = lastName;
+        this.lastName.set(lastName);
     }
 
+    @Column(name = Columns.PHONE)
     public String getPhone() {
+        return phone.get();
+    }
+
+    public StringProperty phoneProperty() {
         return phone;
     }
 
     public void setPhone(String phone) {
-        this.phone = phone;
+        this.phone.set(phone);
     }
 
+    @Column(name = Columns.EMAIL)
     public String getEmail() {
+        return email.get();
+    }
+
+    public StringProperty emailProperty() {
         return email;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        this.email.set(email);
     }
 
+    @Column(name = Columns.PASSWORD)
     public String getPassword() {
+        return password.get();
+    }
+
+    public StringProperty passwordProperty() {
         return password;
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.password.set(password);
     }
 
+    @ManyToOne
     public StudentGroup getStudentGroup() {
+        return studentGroup.getValue();
+    }
+
+    public Property<StudentGroup> studentGroupProperty() {
         return studentGroup;
     }
 
     public void setStudentGroup(StudentGroup studentGroup) {
-        this.studentGroup = studentGroup;
+        this.studentGroup.setValue(studentGroup);
     }
 
+    @Column(name = Columns.NUMBER)
     public int getNumber() {
+        return number.get();
+    }
+
+    public IntegerProperty numberProperty() {
         return number;
     }
 
     public void setNumber(int number) {
-        this.number = number;
-    }
-
-    public Set<Grade> getGrades() {
-        return grades;
-    }
-
-    public void setGrades(Set<Grade> grades) {
-        this.grades = grades;
-    }
-
-    public Set<Remark> getRemarks() {
-        return remarks;
-    }
-
-    public void setRemarks(Set<Remark> remarks) {
-        this.remarks = remarks;
+        this.number.set(number);
     }
 }

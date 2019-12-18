@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Access(AccessType.PROPERTY)
 public class Teacher {
 
-    private IntegerProperty teacher_id = new SimpleIntegerProperty();
+    private IntegerProperty teacherId = new SimpleIntegerProperty();
     private StringProperty firstName;
     private StringProperty lastName;
     private StringProperty phone;
@@ -42,22 +42,22 @@ public class Teacher {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="teacherId")
-    public int getId(){
-        return teacher_id.get();
+    @Column(name = Columns.TEACHER_ID)
+    public int getTeacherId(){
+        return teacherId.get();
     }
 
-    public IntegerProperty idProperty()
+    public IntegerProperty teacherIdProperty()
     {
-        return teacher_id;
+        return teacherId;
     }
 
-    public void setId(int id)
+    public void setTeacherId(int id)
     {
-        this.teacher_id.set(id);
+        this.teacherId.set(id);
     }
 
-    @Column(name="firstName")
+    @Column(name = Columns.FIRST_NAME)
     public String getFirstName()
     {
         return firstName.get();
@@ -73,7 +73,7 @@ public class Teacher {
         this.firstName.set(firstName);
     }
 
-    @Column(name="lastName")
+    @Column(name = Columns.LAST_NAME)
     public String getLastName()
     {
         return lastName.get();
@@ -89,7 +89,7 @@ public class Teacher {
         this.lastName.set(lastName);
     }
 
-    @Column(name="phone")
+    @Column(name = Columns.PHONE)
     public String getPhone()
     {
         return phone.get();
@@ -105,7 +105,7 @@ public class Teacher {
         this.phone.set(phone);
     }
 
-    @Column(name="email")
+    @Column(name = Columns.EMAIL)
     public final String getEmail()
     {
         return email.get();
@@ -116,12 +116,11 @@ public class Teacher {
         return email;
     }
 
-    public void setEmail(String email)
-    {
+    public void setEmail(String email) {
         this.email.set(email);
     }
 
-    @Column(name="password")
+    @Column(name = Columns.PASSWORD)
     public String getPassword()
     {
         return password.get();

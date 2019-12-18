@@ -8,13 +8,14 @@ import pl.edu.agh.to2.model.Teacher;
 import pl.edu.agh.to2.session.SessionService;
 
 import javax.persistence.PersistenceException;
+import java.util.Date;
 import java.util.List;
 
 public class GradeDAO extends GenericDAO<Grade> {
 
     public boolean create(int grade, Student student, Teacher teacher, Course course, String comment) {
         try {
-            save(new Grade(grade, student, teacher,  course, comment));
+            save(new Grade(grade, student, teacher,  course, comment, new Date()));
             return true;
         } catch (PersistenceException e) {
             e.printStackTrace();

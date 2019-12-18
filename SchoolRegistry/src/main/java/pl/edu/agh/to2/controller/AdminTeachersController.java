@@ -44,7 +44,6 @@ public class AdminTeachersController {
     private void initialize() {
         teachersTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 
-
         first_nameColumn.setCellValueFactory(data -> data.getValue().firstNameProperty());
         last_nameColumn.setCellValueFactory(data -> data.getValue().lastNameProperty());
         phoneColumn.setCellValueFactory(data -> data.getValue().phoneProperty());
