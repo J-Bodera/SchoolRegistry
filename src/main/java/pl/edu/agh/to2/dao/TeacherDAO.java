@@ -3,7 +3,6 @@ package pl.edu.agh.to2.dao;
 import org.hibernate.query.NativeQuery;
 import pl.edu.agh.to2.model.Teacher;
 import pl.edu.agh.to2.session.SessionService;
-
 import javax.persistence.PersistenceException;
 import java.util.List;
 
@@ -33,15 +32,15 @@ public class TeacherDAO extends GenericDAO<Teacher> {
     }
 
     public int delete(int id){
-        NativeQuery query = SessionService.getSession().createNativeQuery("DELETE FROM Teacher t WHERE t.id = :id")
+        NativeQuery<?> query = SessionService.getSession().createNativeQuery("DELETE FROM Teacher t WHERE t.id = :id")
                 .setParameter("id", id);
         int result = query.executeUpdate();
         System.out.println("Rows affected: " + result);
         return result;
     }
 
-    public List<Teacher> findAll(){
-        NativeQuery query = SessionService.getSession().createNativeQuery("FROM Teacher t");
+    public List<?> findAll(){
+        NativeQuery<?>  query = SessionService.getSession().createNativeQuery("FROM Teacher t");
         return query.list();
     }
 

@@ -1,19 +1,11 @@
 package pl.edu.agh.to2.dao;
 
-import javafx.beans.property.StringProperty;
-import org.hibernate.Query;
-import pl.edu.agh.to2.model.Grade;
+import org.hibernate.query.NativeQuery;
 import pl.edu.agh.to2.model.Student;
 import pl.edu.agh.to2.model.StudentGroup;
-import pl.edu.agh.to2.model.Teacher;
 import pl.edu.agh.to2.session.SessionService;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityTransaction;
 import javax.persistence.PersistenceException;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class StudentDAO extends GenericDAO<Student> {
 
@@ -45,35 +37,33 @@ public class StudentDAO extends GenericDAO<Student> {
     }
 
     public int delete(int id){
-        Query query = SessionService.getSession().createQuery("DELETE FROM Student s WHERE s.studentId = :id")
+        NativeQuery<?> query = SessionService.getSession().createNativeQuery("DELETE FROM Student s WHERE s.studentId = :id")
                 .setParameter("id", id);
         int result = query.executeUpdate();
         System.out.println("Rows affected: " + result);
         return result;
     }
 
-    public List<Student> findAll(){
-        Query query = SessionService.getSession().createQuery("FROM Student s");
+    public List<?> findAll(){
+        NativeQuery<?> query = SessionService.getSession().createNativeQuery("FROM Student s");
         return query.list();
     }
 
-    public List<Student> findAllFromStudentGroup(StudentGroup studentGroup){
-        Query query = SessionService.getSession().createQuery("FROM Student s WHERE s.studentGroup = :studentGroup")
+    public List<?> findAllFromStudentGroup(StudentGroup studentGroup){
+        NativeQuery<?> query = SessionService.getSession().createNativeQuery("FROM Student s WHERE s.studentGroup = :studentGroup")
                 .setParameter("studentGroup", studentGroup);
         return query.list();
     }
 
     public Student findByStudentId(int studentId){
-        Student student = (Student) SessionService.getSession().createQuery("SELECT s FROM Student s WHERE s.studentId = :id")
+        return (Student) SessionService.getSession().createQuery("SELECT s FROM Student s WHERE s.studentId = :id")
                 .setParameter("id", studentId).list().get(0);
-        return student;
     }
 
     public Student findByStudentName(String firstName, String lastName){
-        Student student = (Student) SessionService.getSession()
+        return (Student) SessionService.getSession()
                 .createQuery("SELECT s FROM Student s WHERE s.firstName = :firstName AND s.lastName = :lastName")
                 .setParameter("firstName", firstName).setParameter("lastName", lastName).list().get(0);
-        return student;
     }
 
 }

@@ -3,8 +3,6 @@ package pl.edu.agh.to2.dao;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import pl.edu.agh.to2.session.SessionService;
-
-import javax.persistence.EntityManager;
 import javax.persistence.PersistenceException;
 
 public abstract class GenericDAO<T> {
@@ -28,7 +26,5 @@ public abstract class GenericDAO<T> {
     public Session currentSession() {
         return SessionService.getSession();
     }
-
-
 
 }

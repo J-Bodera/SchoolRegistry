@@ -1,12 +1,11 @@
 package pl.edu.agh.to2.dao;
 
-import org.hibernate.Query;
+import org.hibernate.query.NativeQuery;
 import pl.edu.agh.to2.model.Course;
 import pl.edu.agh.to2.model.Grade;
 import pl.edu.agh.to2.model.Student;
 import pl.edu.agh.to2.model.Teacher;
 import pl.edu.agh.to2.session.SessionService;
-
 import javax.persistence.PersistenceException;
 import java.util.Date;
 import java.util.List;
@@ -37,20 +36,20 @@ public class GradeDAO extends GenericDAO<Grade> {
     }
 
     public int delete(int gradeId){
-        Query query = SessionService.getSession().createQuery("DELETE FROM Grade g WHERE g.gradeId = :gradeId")
+        NativeQuery<?> query = SessionService.getSession().createNativeQuery("DELETE FROM Grade g WHERE g.gradeId = :gradeId")
                 .setParameter("gradeId", gradeId);
         int result = query.executeUpdate();
         System.out.println("Rows affected: " + result);
         return result;
     }
 
-    public List<Grade> findAll(){
-        Query query = SessionService.getSession().createQuery("FROM Grade g");
+    public List<?> findAll(){
+        NativeQuery<?> query = SessionService.getSession().createNativeQuery("FROM Grade g");
         return query.list();
     }
 
-    public List<Grade> findAllForStudent(Student student){
-        Query query = SessionService.getSession().createQuery("FROM Grade g WHERE g.student = :student")
+    public List<?> findAllForStudent(Student student){
+        NativeQuery<?> query = SessionService.getSession().createNativeQuery("FROM Grade g WHERE g.student = :student")
                 .setParameter("student", student);
         return query.list();
     }

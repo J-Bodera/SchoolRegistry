@@ -2,6 +2,7 @@ package pl.edu.agh.to2.dao;
 
 
 import org.hibernate.Query;
+import org.hibernate.query.NativeQuery;
 import pl.edu.agh.to2.model.*;
 import pl.edu.agh.to2.session.SessionService;
 
@@ -33,20 +34,20 @@ public class MessageDAO extends GenericDAO<Message> {
     }
 
     public int delete(int messageId){
-        Query query = SessionService.getSession().createQuery("DELETE FROM Message m WHERE m.messageId = :messageId")
+        NativeQuery<?> query = SessionService.getSession().createNativeQuery("DELETE FROM Message m WHERE m.messageId = :messageId")
                 .setParameter("messageId", messageId);
         int result = query.executeUpdate();
         System.out.println("Rows affected: " + result);
         return result;
     }
 
-    public List<Message> findAll(){
-        Query query = SessionService.getSession().createQuery("FROM Message m");
+    public List<?> findAll(){
+        NativeQuery<?> query = SessionService.getSession().createNativeQuery("FROM Message m");
         return query.list();
     }
 
-    public List<Message> findAllForStudentGroup(StudentGroup receiver){
-        Query query = SessionService.getSession().createQuery("FROM Message m WHERE m.receiver = :receiver")
+    public List<?> findAllForStudentGroup(StudentGroup receiver){
+        NativeQuery<?> query = SessionService.getSession().createNativeQuery("FROM Message m WHERE m.receiver = :receiver")
                 .setParameter("receiver", receiver);
         return query.list();
     }

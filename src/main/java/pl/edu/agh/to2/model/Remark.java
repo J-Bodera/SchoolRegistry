@@ -1,7 +1,6 @@
 package pl.edu.agh.to2.model;
 
 import javafx.beans.property.*;
-
 import javax.persistence.*;
 import java.util.Date;
 

@@ -1,29 +1,16 @@
 package pl.edu.agh.to2;
 
-import java.util.Properties;
-
 import javafx.application.Application;
 import javafx.stage.Stage;
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
 import pl.edu.agh.to2.controller.AppController;
-import pl.edu.agh.to2.dao.CourseDAO;
 import pl.edu.agh.to2.dao.StudentDAO;
 import pl.edu.agh.to2.dao.StudentGroupDAO;
 import pl.edu.agh.to2.dao.TeacherDAO;
-import pl.edu.agh.to2.model.*;
 import pl.edu.agh.to2.session.SessionService;
 
-import static javafx.application.Application.launch;
-
 public class App extends Application {
-    private static SessionFactory sessionFactory = null;
-
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) {
         primaryStage.setTitle("First");
 
         AppController appController = new AppController(primaryStage);

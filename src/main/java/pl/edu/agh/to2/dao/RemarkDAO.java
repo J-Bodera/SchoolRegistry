@@ -1,9 +1,8 @@
 package pl.edu.agh.to2.dao;
 
-import org.hibernate.Query;
+import org.hibernate.query.NativeQuery;
 import pl.edu.agh.to2.model.*;
 import pl.edu.agh.to2.session.SessionService;
-
 import javax.persistence.PersistenceException;
 import java.util.Date;
 import java.util.List;
@@ -32,20 +31,20 @@ public class RemarkDAO extends GenericDAO<Remark> {
     }
 
     public int delete(int remarkId){
-        Query query = SessionService.getSession().createQuery("DELETE FROM Remark r WHERE r.remarkId = :remarkId")
+        NativeQuery<?> query = SessionService.getSession().createNativeQuery("DELETE FROM Remark r WHERE r.remarkId = :remarkId")
                 .setParameter("remarkId", remarkId);
         int result = query.executeUpdate();
         System.out.println("Rows affected: " + result);
         return result;
     }
 
-    public List<Remark> findAll(){
-        Query query = SessionService.getSession().createQuery("FROM Remark r");
+    public List<?> findAll(){
+        NativeQuery<?> query = SessionService.getSession().createNativeQuery("FROM Remark r");
         return query.list();
     }
 
-    public List<Remark> findAllForStudent(Student student){
-        Query query = SessionService.getSession().createQuery("FROM Remark r WHERE r.student = :student")
+    public List<?> findAllForStudent(Student student){
+        NativeQuery<?> query = SessionService.getSession().createNativeQuery("FROM Remark r WHERE r.student = :student")
                 .setParameter("student", student);
         return query.list();
     }

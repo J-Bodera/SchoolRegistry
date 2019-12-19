@@ -2,10 +2,7 @@ package pl.edu.agh.to2.model;
 
 import javafx.beans.property.*;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableSet;
-
 import javax.persistence.*;
-import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -76,7 +73,7 @@ public class StudentGroup {
     }
 
     public SetProperty<Course> coursesProperty() {
-        return new SimpleSetProperty<Course>(FXCollections.observableSet(courses));
+        return new SimpleSetProperty<>(FXCollections.observableSet(courses));
     }
 
     public void setCourses(Set<Course> courses) {
