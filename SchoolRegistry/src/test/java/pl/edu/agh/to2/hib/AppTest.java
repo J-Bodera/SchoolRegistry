@@ -1,10 +1,8 @@
 package pl.edu.agh.to2.hib;
 
-import org.hibernate.AssertionFailure;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Test;
 import pl.edu.agh.to2.dao.CourseDAO;
 import pl.edu.agh.to2.dao.StudentDAO;
 import pl.edu.agh.to2.dao.StudentGroupDAO;

@@ -42,9 +42,10 @@ public class App extends Application {
         StudentDAO studentDAO = new StudentDAO();
         studentDAO.create("Anna", "Nowak", "122456789", "an@xx.com", "abc", studentGroupDAO.findByName("1a"), 3);
 
+        launch(args);
+
         SessionService.closeSession();
 
-        launch(args);
-	}
+    }
 
 }
