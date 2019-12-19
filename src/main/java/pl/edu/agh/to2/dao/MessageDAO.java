@@ -1,7 +1,5 @@
 package pl.edu.agh.to2.dao;
 
-
-import org.hibernate.Query;
 import org.hibernate.query.NativeQuery;
 import pl.edu.agh.to2.model.*;
 import pl.edu.agh.to2.session.SessionService;
