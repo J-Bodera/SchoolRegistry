@@ -1,5 +1,6 @@
 # folders
 /.idea/
+/target/
 
 # files
 /mydb.db
