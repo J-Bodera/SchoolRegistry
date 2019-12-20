@@ -18,10 +18,16 @@ public class App extends Application {
     }
 
 	public static void main(String[] args) {
-	    SessionService.openSession();
+        SessionService.openSession();
 
         TeacherDAO teacherDAO = new TeacherDAO();
         teacherDAO.create("Anna", "Nowak", "122456789", "jnowak@gmail.com", "abcd12345");
+        teacherDAO.create("Jan", "Nowak", "122456789", "jnowak@gmail.com", "abcd12345");
+        teacherDAO.create("Maria", "Nowak", "122456789", "jnowak@gmail.com", "abcd12345");
+        //teacherDAO.delete(2);
+        // teacherDAO.update(1,"a","b","c","d","e");
+        teacherDAO.create("Marek", "Nowak", "122456789", "jnowak@gmail.com", "abcd12345");
+
 
         StudentGroupDAO studentGroupDAO = new StudentGroupDAO();
         studentGroupDAO.create("1a", teacherDAO.findByTeacherName("Anna", "Nowak"));
