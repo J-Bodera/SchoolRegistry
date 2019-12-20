@@ -31,10 +31,12 @@ public class RemarkDAO extends GenericDAO<Remark> {
     }
 
     public int delete(int remarkId){
-        NativeQuery<?> query = SessionService.getSession().createNativeQuery("DELETE FROM Remark r WHERE r.remarkId = :remarkId")
+        SessionService.getEntityTransaction().begin();
+        NativeQuery<?> query = (NativeQuery<?>) SessionService.getEntityManager().createNativeQuery("DELETE FROM Remark WHERE remark_id = :remarkId")
                 .setParameter("remarkId", remarkId);
         int result = query.executeUpdate();
         System.out.println("Rows affected: " + result);
+        SessionService.getEntityTransaction().commit();
         return result;
     }
 

@@ -29,13 +29,14 @@ public class StudentGroupDAO extends GenericDAO<StudentGroup> {
     }
 
     public int delete(int studentGroupId){
-        NativeQuery<?> query = SessionService.getSession().createNativeQuery("DELETE FROM StudentGroup s WHERE s.studentGroupId = :studentGroupId")
+        SessionService.getEntityTransaction().begin();
+        NativeQuery<?> query = (NativeQuery<?>) SessionService.getEntityManager().createNativeQuery("DELETE FROM Student_group WHERE student_group_id = :studentGroupId")
                 .setParameter("studentGroupId", studentGroupId);
         int result = query.executeUpdate();
         System.out.println("Rows affected: " + result);
+        SessionService.getEntityTransaction().commit();
         return result;
     }
-
     public List<?> findAll(){
         NativeQuery<?> query = SessionService.getSession().createNativeQuery("FROM StudentGroup s");
         return query.list();

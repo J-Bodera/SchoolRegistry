@@ -32,10 +32,12 @@ public class MessageDAO extends GenericDAO<Message> {
     }
 
     public int delete(int messageId){
-        NativeQuery<?> query = SessionService.getSession().createNativeQuery("DELETE FROM Message m WHERE m.messageId = :messageId")
+        SessionService.getEntityTransaction().begin();
+        NativeQuery<?> query = (NativeQuery<?>) SessionService.getEntityManager().createNativeQuery("DELETE FROM Message WHERE message_id = :messageId")
                 .setParameter("messageId", messageId);
         int result = query.executeUpdate();
         System.out.println("Rows affected: " + result);
+        SessionService.getEntityTransaction().commit();
         return result;
     }
 

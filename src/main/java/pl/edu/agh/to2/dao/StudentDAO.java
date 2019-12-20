@@ -37,10 +37,12 @@ public class StudentDAO extends GenericDAO<Student> {
     }
 
     public int delete(int id){
-        NativeQuery<?> query = SessionService.getSession().createNativeQuery("DELETE FROM Student s WHERE s.studentId = :id")
+        SessionService.getEntityTransaction().begin();
+        NativeQuery<?> query = (NativeQuery<?>) SessionService.getEntityManager().createNativeQuery("DELETE FROM Student WHERE student_id = :id")
                 .setParameter("id", id);
         int result = query.executeUpdate();
         System.out.println("Rows affected: " + result);
+        SessionService.getEntityTransaction().commit();
         return result;
     }
 

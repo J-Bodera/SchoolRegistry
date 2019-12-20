@@ -24,11 +24,13 @@ public class CourseDAO extends GenericDAO<Course> {
                 + "WHERE c.courseId = :courseId").setParameter("courseId", courseId).setParameter("courseName", courseId).executeUpdate();
     }
 
-    public int delete(String name){
-        NativeQuery<?> query = SessionService.getSession().createNativeQuery("DELETE FROM Course c WHERE c.courseName = :name")
-                .setParameter("name", name);
+    public int delete(int id){
+        SessionService.getEntityTransaction().begin();
+        NativeQuery<?> query = (NativeQuery<?>) SessionService.getEntityManager().createNativeQuery("DELETE FROM Course WHERE course_id = :id")
+                .setParameter("id", id);
         int result = query.executeUpdate();
         System.out.println("Rows affected: " + result);
+        SessionService.getEntityTransaction().commit();
         return result;
     }
 

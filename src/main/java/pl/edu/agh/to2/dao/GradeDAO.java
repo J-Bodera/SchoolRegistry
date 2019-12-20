@@ -36,10 +36,12 @@ public class GradeDAO extends GenericDAO<Grade> {
     }
 
     public int delete(int gradeId){
-        NativeQuery<?> query = SessionService.getSession().createNativeQuery("DELETE FROM Grade g WHERE g.gradeId = :gradeId")
+        SessionService.getEntityTransaction().begin();
+        NativeQuery<?> query = (NativeQuery<?>) SessionService.getEntityManager().createNativeQuery("DELETE FROM Grade WHERE grade_id = :gradeId")
                 .setParameter("gradeId", gradeId);
         int result = query.executeUpdate();
         System.out.println("Rows affected: " + result);
+        SessionService.getEntityTransaction().commit();
         return result;
     }
 

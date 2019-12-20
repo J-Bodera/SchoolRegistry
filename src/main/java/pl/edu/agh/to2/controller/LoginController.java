@@ -3,6 +3,7 @@ package pl.edu.agh.to2.controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 import javax.swing.*;
@@ -16,7 +17,7 @@ public class LoginController {
     private TextField loginTextField;
 
     @FXML
-    private TextField passwordTextField;
+    private PasswordField passwordTextField;
 
     @FXML
     private Button loginButton;

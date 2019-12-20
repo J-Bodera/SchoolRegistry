@@ -20,11 +20,11 @@
                 <Font size="14.0" />
             </font>
         </TextField>
-        <TextField fx:id="passwordTextField" layoutX="212.0" layoutY="225.0" promptText="Hasło" onAction="#handleLoginAction">
+        <PasswordField fx:id="passwordTextField" layoutX="212.0" layoutY="225.0" promptText="Hasło" onAction="#handleLoginAction">
             <font>
                 <Font size="14.0" />
             </font>
-        </TextField>
+        </PasswordField>
         <Button fx:id="loginButton" layoutX="235.0" layoutY="272.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Zaloguj" onAction="#handleLoginAction">
             <font>
                 <Font size="14.0" />
