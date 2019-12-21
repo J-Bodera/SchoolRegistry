@@ -24,7 +24,7 @@ public class App extends Application {
         teacherDAO.create("Anna", "Nowak", "122456789", "jnowak@gmail.com", "abcd12345");
         teacherDAO.create("Jan", "Nowak", "122456789", "jnowak@gmail.com", "abcd12345");
         teacherDAO.create("Maria", "Nowak", "122456789", "jnowak@gmail.com", "abcd12345");
-        //teacherDAO.delete(2);
+        teacherDAO.delete(2);
         // teacherDAO.update(1,"a","b","c","d","e");
         teacherDAO.create("Marek", "Nowak", "122456789", "jnowak@gmail.com", "abcd12345");
 

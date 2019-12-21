@@ -31,11 +31,15 @@ public class TeacherDAO extends GenericDAO<Teacher> {
                 + "WHERE t.id = :teacherId").setParameter("teacherId", teacherId).setParameter("password", password).executeUpdate();
     }
 
-    public int delete(int id){
-        NativeQuery<?> query = SessionService.getSession().createNativeQuery("DELETE FROM Teacher t WHERE t.id = :id")
-                .setParameter("id", id);
-        int result = query.executeUpdate();
+    public int delete(int teacherId) {
+        SessionService.getEntityTransaction().begin();
+//        NativeQuery<?> query = (NativeQuery<?>) SessionService.getEntityManager().createNativeQuery("DELETE FROM Teacher WHERE teacher_id = :id")
+//                .setParameter("id", teacherId);
+
+        int result = SessionService.getEntityManager().createNativeQuery("DELETE FROM Teacher WHERE teacher_id = :id")
+                .setParameter("id", teacherId).executeUpdate();
         System.out.println("Rows affected: " + result);
+        SessionService.getEntityTransaction().commit();
         return result;
     }
 

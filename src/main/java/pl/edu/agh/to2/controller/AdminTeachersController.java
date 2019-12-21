@@ -83,6 +83,10 @@ public class AdminTeachersController {
 
     @FXML
     private void handleAddAction() {
-
+        Teacher teacher= new Teacher("","","","","");
+        teachers.add(teacher);
+        if(teacher != null ) {
+            appController.showTeacherEditDialog(teacher);
+        }
     }
 }
