@@ -20,12 +20,14 @@ public class StudentGroupDAO extends GenericDAO<StudentGroup> {
     }
 
     public void update(int studentGroupId, String name, Teacher tutor){
-        SessionService.getSession().createQuery("UPDATE StudentGroup s set s.name = :name "
-                + "WHERE s.studentGroupId = :studentGroupId").setParameter("studentGroupId", studentGroupId)
+        SessionService.getEntityTransaction().begin();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Student_group set student_group_name = :name "
+                + "WHERE student_group_id = :studentGroupId").setParameter("studentGroupId", studentGroupId)
                 .setParameter("name", name).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE StudentGroup s set s.tutor = :tutor "
-                + "WHERE s.studentGroupId = :studentGroupId").setParameter("studentGroupId", studentGroupId)
+        SessionService.getEntityManager().createNativeQuery("UPDATE Student_group set tutor_teacher_id = :tutor "
+                + "WHERE student_group_id = :studentGroupId").setParameter("studentGroupId", studentGroupId)
                 .setParameter("tutor", tutor).executeUpdate();
+        SessionService.getEntityTransaction().commit();
     }
 
     public int delete(int studentGroupId){

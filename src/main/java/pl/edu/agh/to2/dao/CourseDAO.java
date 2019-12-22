@@ -20,8 +20,10 @@ public class CourseDAO extends GenericDAO<Course> {
     }
 
     public void update(int courseId, String courseName){
-        SessionService.getSession().createNativeQuery("UPDATE Course c set c.courseName = :courseName "
-                + "WHERE c.courseId = :courseId").setParameter("courseId", courseId).setParameter("courseName", courseId).executeUpdate();
+        SessionService.getEntityTransaction().begin();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Course set course_name= :courseName "
+                + "WHERE course_id = :courseId").setParameter("courseId", courseId).setParameter("courseName", courseId).executeUpdate();
+        SessionService.getEntityTransaction().commit();
     }
 
     public int delete(int id){

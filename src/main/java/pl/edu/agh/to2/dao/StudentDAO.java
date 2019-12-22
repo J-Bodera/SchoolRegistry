@@ -20,20 +20,22 @@ public class StudentDAO extends GenericDAO<Student> {
     }
 
     public void update(int studentId, String firstName, String lastName, String phone, String email, String password, StudentGroup studentGroup, int number){
-        SessionService.getSession().createQuery("UPDATE Student s set s.firstName = :firstName "
-                + "WHERE s.studentId = :studentId").setParameter("studentId", studentId).setParameter("firstName", firstName).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Student s set s.lastName = :lastName "
-                + "WHERE s.studentId = :studentId").setParameter("studentId", studentId).setParameter("lastName", lastName).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Student s set s.phone = :phone "
-                + "WHERE s.studentId = :studentId").setParameter("studentId", studentId).setParameter("phone", phone).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Student s set s.email = :email "
-                + "WHERE s.studentId = :studentId").setParameter("studentId", studentId).setParameter("email", email).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Student s set s.password = :password "
-                + "WHERE s.studentId = :studentId").setParameter("studentId", studentId).setParameter("password", password).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Student s set s.studentGroup = :studentGroup "
-                + "WHERE s.studentId = :studentId").setParameter("studentId", studentId).setParameter("studentGroup", studentGroup).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Student s set s.number = :number "
-                + "WHERE s.studentId = :studentId").setParameter("studentId", studentId).setParameter("number", number).executeUpdate();
+        SessionService.getEntityTransaction().begin();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Student set first_name = :firstName "
+                + "WHERE student_id = :studentId").setParameter("studentId", studentId).setParameter("firstName", firstName).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Student set last_name = :lastName "
+                + "WHERE student_id = :studentId").setParameter("studentId", studentId).setParameter("lastName", lastName).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Student set phone = :phone "
+                + "WHERE student_id = :studentId").setParameter("studentId", studentId).setParameter("phone", phone).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Student set email = :email "
+                + "WHERE student_id = :studentId").setParameter("studentId", studentId).setParameter("email", email).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Student set password = :password "
+                + "WHERE student_id = :studentId").setParameter("studentId", studentId).setParameter("password", password).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Student set studentGroup_student_group_id = :studentGroup "
+                + "WHERE student_id = :studentId").setParameter("studentId", studentId).setParameter("studentGroup", studentGroup).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Student set number = :number "
+                + "WHERE student_id = :studentId").setParameter("studentId", studentId).setParameter("number", number).executeUpdate();
+        SessionService.getEntityTransaction().commit();
     }
 
     public int delete(int id){

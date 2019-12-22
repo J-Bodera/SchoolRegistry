@@ -19,15 +19,17 @@ public class RemarkDAO extends GenericDAO<Remark> {
         }
     }
 
-    public void update(int remarkId, Student student, Teacher teacher, String text, Date date){
-        SessionService.getSession().createQuery("UPDATE Remark r set r.student = :student "
-                + "WHERE r.remarkId = :remarkId").setParameter("remarkId", remarkId).setParameter("student", student).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Remark r set r.teacher = :teacher "
-                + "WHERE r.remarkId = :remarkId").setParameter("remarkId", remarkId).setParameter("teacher", teacher).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Remark r set r.text = :text "
-                + "WHERE r.remarkId = :remarkId").setParameter("remarkId", remarkId).setParameter("text", text).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Remark r set r.date = :date "
-                + "WHERE r.remarkId = :remarkId").setParameter("remarkId", remarkId).setParameter("date", date).executeUpdate();
+    public void update(int  remarkId, Student student, Teacher teacher, String text, Date date){
+        SessionService.getEntityTransaction().begin();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Remark  set student_student_id = :student "
+                + "WHERE  remark_id = :remarkId").setParameter("remarkId", remarkId).setParameter("student", student).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Remark  set teacher_teacher_id = :teacher "
+                + "WHERE  remark_id = :remarkId").setParameter("remarkId", remarkId).setParameter("teacher", teacher).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Remark  set text = :text "
+                + "WHERE  remark_id = :remarkId").setParameter("remarkId", remarkId).setParameter("text", text).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Remark  set date = :date "
+                + "WHERE  remark_id = :remarkId").setParameter("remarkId", remarkId).setParameter("date", date).executeUpdate();
+        SessionService.getEntityTransaction().begin();
     }
 
     public int delete(int remarkId){

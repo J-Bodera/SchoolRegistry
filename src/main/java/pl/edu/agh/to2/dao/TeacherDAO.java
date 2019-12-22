@@ -19,16 +19,18 @@ public class TeacherDAO extends GenericDAO<Teacher> {
     }
 
     public void update(int teacherId, String firstName, String lastName, String phone, String email, String password){
-        SessionService.getSession().createQuery("UPDATE Teacher t set t.firstName = :firstName "
-                + "WHERE t.id = :teacherId").setParameter("teacherId", teacherId).setParameter("firstName", firstName).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Teacher t set t.lastName = :lastName "
-                + "WHERE t.id = :teacherId").setParameter("teacherId", teacherId).setParameter("lastName", lastName).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Teacher t set t.phone = :phone "
-                + "WHERE t.id = :teacherId").setParameter("teacherId", teacherId).setParameter("phone", phone).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Teacher t set t.email = :email "
-                + "WHERE t.id = :teacherId").setParameter("teacherId", teacherId).setParameter("email", email).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Teacher t set t.password = :password "
-                + "WHERE t.id = :teacherId").setParameter("teacherId", teacherId).setParameter("password", password).executeUpdate();
+        SessionService.getEntityTransaction().begin();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Teacher set first_name = :firstName "
+                + "WHERE teacher_id = :teacherId").setParameter("teacherId", teacherId).setParameter("firstName", firstName).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Teacher set last_name = :lastName "
+                + "WHERE teacher_id = :teacherId").setParameter("teacherId", teacherId).setParameter("lastName", lastName).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Teacher set phone = :phone "
+                + "WHERE teacher_id = :teacherId").setParameter("teacherId", teacherId).setParameter("phone", phone).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Teacher set email = :email "
+                + "WHERE teacher_id = :teacherId").setParameter("teacherId", teacherId).setParameter("email", email).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Teacher set password = :password "
+                + "WHERE teacher_id = :teacherId").setParameter("teacherId", teacherId).setParameter("password", password).executeUpdate();
+        SessionService.getEntityTransaction().commit();
     }
 
     public int delete(int id){

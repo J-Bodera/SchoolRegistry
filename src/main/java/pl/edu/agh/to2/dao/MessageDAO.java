@@ -21,14 +21,16 @@ public class MessageDAO extends GenericDAO<Message> {
     }
 
     public void update(int messageId, Teacher sender, StudentGroup receiver, String text, Date date){
-        SessionService.getSession().createQuery("UPDATE Message m set m.sender = :sender "
-                + "WHERE m.messageId = :messageId").setParameter("messageId", messageId).setParameter("sender", sender).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Message m set m.receiver = :receiver "
-                + "WHERE m.messageId = :messageId").setParameter("messageId", messageId).setParameter("receiver", receiver).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Message m set m.text = :text "
-                + "WHERE m.messageId = :messageId").setParameter("messageId", messageId).setParameter("text", text).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Message m set m.date = :date "
-                + "WHERE m.messageId = :messageId").setParameter("messageId", messageId).setParameter("date", date).executeUpdate();
+        SessionService.getEntityTransaction().begin();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Message set sender_teacher_id = :sender "
+                + "WHERE  message_id = :messageId").setParameter("messageId", messageId).setParameter("sender", sender).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Message set receiver_student_group_id = :receiver "
+                + "WHERE  message_id = :messageId").setParameter("messageId", messageId).setParameter("receiver", receiver).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Message set text = :text "
+                + "WHERE  message_id = :messageId").setParameter("messageId", messageId).setParameter("text", text).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Message set date = :date "
+                + "WHERE  message_id = :messageId").setParameter("messageId", messageId).setParameter("date", date).executeUpdate();
+        SessionService.getEntityTransaction().commit();
     }
 
     public int delete(int messageId){

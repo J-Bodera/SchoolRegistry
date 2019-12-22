@@ -29,6 +29,8 @@ public class App extends Application {
         StudentDAO studentDAO = new StudentDAO();
         studentDAO.create("Anna", "Nowak", "122456789", "an@xx.com", "abc", studentGroupDAO.findByName("1a"), 3);
 
+        teacherDAO.update(1, "Magdalena", "Nowak", "122456789", "jnowak@gmail.com", "abcd12345");
+
         launch(args);
 
         SessionService.closeSession();
