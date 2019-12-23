@@ -23,23 +23,27 @@ public class GradeDAO extends GenericDAO<Grade> {
     }
 
     public void update(int gradeId, int grade, Student student, Teacher teacher, Course course, String comment){
-        SessionService.getSession().createQuery("UPDATE Grade g set g.grade = :grade "
-                + "WHERE g.gradeId = :gradeId").setParameter("gradeId", gradeId).setParameter("grade", grade).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Grade g set g.student = :student "
-                + "WHERE g.gradeId = :gradeId").setParameter("gradeId", gradeId).setParameter("student", student).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Grade g set g.teacher = :teacher "
-                + "WHERE g.gradeId = :gradeId").setParameter("gradeId", gradeId).setParameter("teacher", teacher).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Grade g set g.course = :course "
-                + "WHERE g.gradeId = :gradeId").setParameter("gradeId", gradeId).setParameter("course", course).executeUpdate();
-        SessionService.getSession().createQuery("UPDATE Grade g set g.comment = :comment "
-                + "WHERE g.gradeId = :gradeId").setParameter("gradeId", gradeId).setParameter("comment", comment).executeUpdate();
+        SessionService.getEntityTransaction().begin();
+        SessionService. getEntityManager().createNativeQuery("UPDATE Grade set grade = :grade "
+                + "WHERE grade_id = :gradeId").setParameter("gradeId", gradeId).setParameter("grade", grade).executeUpdate();
+        SessionService. getEntityManager().createNativeQuery("UPDATE Grade set student_student_id = :student "
+                + "WHERE grade_id = :gradeId").setParameter("gradeId", gradeId).setParameter("student", student).executeUpdate();
+        SessionService. getEntityManager().createNativeQuery("UPDATE Grade set teacher_teacher_id = :teacher "
+                + "WHERE grade_id = :gradeId").setParameter("gradeId", gradeId).setParameter("teacher", teacher).executeUpdate();
+        SessionService. getEntityManager().createNativeQuery("UPDATE Grade set course_course_id = :course "
+                + "WHERE grade_id = :gradeId").setParameter("gradeId", gradeId).setParameter("course", course).executeUpdate();
+        SessionService. getEntityManager().createNativeQuery("UPDATE Grade set comment = :comment "
+                + "WHERE grade_id = :gradeId").setParameter("gradeId", gradeId).setParameter("comment", comment).executeUpdate();
+        SessionService.getEntityTransaction().commit();
     }
 
     public int delete(int gradeId){
-        NativeQuery<?> query = SessionService.getSession().createNativeQuery("DELETE FROM Grade g WHERE g.gradeId = :gradeId")
+        SessionService.getEntityTransaction().begin();
+        NativeQuery<?> query = (NativeQuery<?>) SessionService.getEntityManager().createNativeQuery("DELETE FROM Grade WHERE grade_id = :gradeId")
                 .setParameter("gradeId", gradeId);
         int result = query.executeUpdate();
         System.out.println("Rows affected: " + result);
+        SessionService.getEntityTransaction().commit();
         return result;
     }
 
