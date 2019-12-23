@@ -60,7 +60,7 @@ public class AdminTeachersController {
     }
 
     private ObservableList<Teacher> teachers = FXCollections.observableArrayList(
-            new TeacherDAO().findByTeacherName("Anna", "Nowak"));
+            new TeacherDAO().findAll());
 
     @FXML
     private void handlePrevAction(){
