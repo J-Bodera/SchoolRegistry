@@ -43,6 +43,9 @@ public class AdminTeachersController {
     private Button editButton;
 
     @FXML
+    private Button deleteButton;
+
+    @FXML
     private void initialize() {
         teachersTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 
@@ -57,6 +60,12 @@ public class AdminTeachersController {
                 Bindings.size(
                         teachersTable.getSelectionModel()
                             .getSelectedItems()).isNotEqualTo(1));
+
+        deleteButton.disableProperty().bind(
+                Bindings.size(
+                        teachersTable.getSelectionModel()
+                                .getSelectedItems()).isNotEqualTo(1));
+
     }
 
     private ObservableList<Teacher> teachers = FXCollections.observableArrayList(
@@ -77,11 +86,22 @@ public class AdminTeachersController {
 
     @FXML
     private void handleDeleteAction() {
+        Teacher teacher = teachersTable.getSelectionModel().getSelectedItem();
+        TeacherDAO teacherDAO = new TeacherDAO();
+
+        if(teacher != null ) {
+            teacherDAO.delete(teacher.getTeacherId());
+            teachers.remove(teacher);
+        }
 
     }
 
     @FXML
     private void handleAddAction() {
-
+        Teacher teacher= new Teacher("","","","","");
+        teachers.add(teacher);
+        if(teacher != null ) {
+            appController.showTeacherEditDialog(teacher);
+        }
     }
 }

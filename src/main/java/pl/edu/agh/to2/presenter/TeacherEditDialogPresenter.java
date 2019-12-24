@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import pl.edu.agh.to2.dao.TeacherDAO;
 import pl.edu.agh.to2.model.Teacher;
 
 public class TeacherEditDialogPresenter {
@@ -31,6 +32,7 @@ public class TeacherEditDialogPresenter {
 
     public void setDialogStage(Stage dialogStage) {
         this.dialogStage = dialogStage;
+        System.out.println(this.dialogStage.getTitle());
     }
 
     public void setData(Teacher teacher) {
@@ -63,11 +65,20 @@ public class TeacherEditDialogPresenter {
     }
 
     private void updateTeacher() {
+        TeacherDAO teacherDAO = new TeacherDAO();
+        String fn= teacher.getFirstName();
+
         teacher.setFirstName(first_nameTextField.getText());
         teacher.setLastName(last_nameTextField.getText());
         teacher.setEmail(emailTextField.getText());
         teacher.setPassword(passwordTextField.getText());
         teacher.setPhone(phoneTextField.getText());
+
+        if (fn==""){
+            teacherDAO.create(teacher.getFirstName(), teacher.getLastName(), teacher.getPhone(), teacher.getEmail(), teacher.getPassword());
+        }
+
+        teacherDAO.update(teacher);
     }
 
     private void updateControls() {

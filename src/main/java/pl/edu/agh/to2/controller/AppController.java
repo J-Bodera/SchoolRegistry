@@ -81,7 +81,11 @@ public class AppController {
             BorderPane page = loader.load();
 
             Stage dialogStage = new Stage();
-            dialogStage.setTitle("Edit teacher");
+            if(teacher.getFirstName() == "") {
+                dialogStage.setTitle("Add teacher");
+            } else {
+                dialogStage.setTitle("Edit teacher");
+            }
             dialogStage.initModality(Modality.WINDOW_MODAL);
             dialogStage.initOwner(primaryStage);
             Scene scene = new Scene(page);
