@@ -7,7 +7,9 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import pl.edu.agh.to2.App;
+import pl.edu.agh.to2.model.Student;
 import pl.edu.agh.to2.model.Teacher;
+import pl.edu.agh.to2.presenter.StudentEditDialogPresenter;
 import pl.edu.agh.to2.presenter.TeacherEditDialogPresenter;
 
 import java.io.IOException;
@@ -74,14 +76,14 @@ public class AppController {
         }
     }
 
-    public boolean showTeacherEditDialog(Teacher teacher) {
+    public void showTeacherEditDialog(Teacher teacher) {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(App.class.getClassLoader().getResource("TeacherEditDialog.fxml"));
             BorderPane page = loader.load();
 
             Stage dialogStage = new Stage();
-            if(teacher.getFirstName() == "") {
+            if(teacher.getFirstName().equals("")) {
                 dialogStage.setTitle("Add teacher");
             } else {
                 dialogStage.setTitle("Edit teacher");
@@ -96,10 +98,8 @@ public class AppController {
             presenter.setData(teacher);
 
             dialogStage.showAndWait();
-            return presenter.isApproved();
         } catch (IOException e) {
             e.printStackTrace();
-            return false;
         }
     }
 
@@ -117,6 +117,33 @@ public class AppController {
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (IOException e ) {
+            e.printStackTrace();
+        }
+    }
+
+    public void showStudentEditDialog(Student student) {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getClassLoader().getResource("StudentEditDialog.fxml"));
+            BorderPane page = loader.load();
+
+            Stage dialogStage = new Stage();
+            if(student.getFirstName().equals("")) {
+                dialogStage.setTitle("Add student");
+            } else {
+                dialogStage.setTitle("Edit student");
+            }
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            StudentEditDialogPresenter presenter = loader.getController();
+            presenter.setDialogStage(dialogStage);
+            presenter.setData(student);
+
+            dialogStage.showAndWait();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -146,8 +173,8 @@ public class AppController {
             loader.setLocation(App.class.getClassLoader().getResource("TeacherPane.fxml"));
             BorderPane TeacherLayout = loader.load();
 
-//            TeacherController controller = loader.getController();
-//            controller.setAppController(this);
+            TeacherController controller = loader.getController();
+            controller.setAppController(this);
 
             Scene scene = new Scene(TeacherLayout);
             primaryStage.setScene(scene);
@@ -162,11 +189,14 @@ public class AppController {
         try {
             this.primaryStage.setTitle("Panel ucznia");
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(App.class.getClassLoader().getResource("StudentPane.fxml"));
+            loader.setLocation(App.class.getClassLoader().getResource("TeacherPane.fxml"));
             BorderPane StudentLayout = loader.load();
 
 //            StudentController controller = loader.getController();
 //            controller.setAppController(this);
+
+            TeacherController controller = loader.getController();
+            controller.setAppController(this);
 
             Scene scene = new Scene(StudentLayout);
             primaryStage.setScene(scene);

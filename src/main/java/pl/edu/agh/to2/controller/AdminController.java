@@ -1,12 +1,8 @@
 package pl.edu.agh.to2.controller;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
 import pl.edu.agh.to2.dao.TeacherDAO;
 import pl.edu.agh.to2.model.Teacher;
 

@@ -50,7 +50,7 @@ public class AppTest {
     public void createAndFindStudentTest() {
         teacherDao.create("Magdalena", "Zielińska", "123456789", "anowak@gmail.com", "abcd12345");
         studentGroupDao.create("1A", teacherDao.findByTeacherName("Magdalena", "Zielińska"));
-        studentDao.create("Jan", "Kowalski", "123456789", "jkowalski@gmail.com", "qwerty123", studentGroupDao.findByName("1A"), 1);
+        studentDao.create("Jan", "Kowalski", "123456789", "jkowalski@gmail.com", "qwerty123");
         Student student = studentDao.findByStudentName("Jan", "Kowalski");
         Assert.assertNotNull(student);
     }
@@ -75,7 +75,7 @@ public class AppTest {
     public void updateStudentTest(){
         teacherDao.create("Katarzyna", "Lesniewska", "123456789", "anowak@gmail.com", "abcd12345");
         studentGroupDao.create("2A", teacherDao.findByTeacherName("Katarzyna", "Lesniewska"));
-        studentDao.create("Andrzej", "Kowalski", "123456789", "jkowalski@gmail.com", "qwerty123", studentGroupDao.findByName("2A"), 2);
+        studentDao.create("Andrzej", "Kowalski", "123456789", "jkowalski@gmail.com", "qwerty123");
         studentDao.update(studentDao.findByStudentName("Andrzej", "Kowalski").getStudentId(), "Marcin", "Nowak", "123456789", "jkowalski@gmail.com", "qwerty123", studentGroupDao.findByName("2A"), 2);
         Assert.assertNotNull(studentDao.findByStudentName("Marcin", "Nowak"));
     }

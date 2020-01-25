@@ -3,8 +3,6 @@ package pl.edu.agh.to2;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import pl.edu.agh.to2.controller.AppController;
-import pl.edu.agh.to2.dao.StudentDAO;
-import pl.edu.agh.to2.dao.StudentGroupDAO;
 import pl.edu.agh.to2.dao.TeacherDAO;
 import pl.edu.agh.to2.model.generator.DataGenerator;
 import pl.edu.agh.to2.session.SessionService;

@@ -10,7 +10,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import pl.edu.agh.to2.dao.TeacherDAO;
 import pl.edu.agh.to2.model.Teacher;
-import pl.edu.agh.to2.session.SessionService;
 
 public class AdminTeachersController {
     private AppController appController;
@@ -37,9 +36,6 @@ public class AdminTeachersController {
     private TableColumn<Teacher, String> emailColumn;
 
     @FXML
-    private TableColumn<Teacher, String> passwordColumn;
-
-    @FXML
     private Button editButton;
 
     @FXML
@@ -53,7 +49,6 @@ public class AdminTeachersController {
         last_nameColumn.setCellValueFactory(data -> data.getValue().lastNameProperty());
         phoneColumn.setCellValueFactory(data -> data.getValue().phoneProperty());
         emailColumn.setCellValueFactory(data -> data.getValue().emailProperty());
-        passwordColumn.setCellValueFactory(data -> data.getValue().passwordProperty());
 
         teachersTable.setItems(teachers);
         editButton.disableProperty().bind(
@@ -100,8 +95,6 @@ public class AdminTeachersController {
     private void handleAddAction() {
         Teacher teacher= new Teacher("","","","","");
         teachers.add(teacher);
-        if(teacher != null ) {
-            appController.showTeacherEditDialog(teacher);
-        }
+        appController.showTeacherEditDialog(teacher);
     }
 }

@@ -23,29 +23,28 @@
     <center>
         <TableView fx:id="studentsTable" prefHeight="350.0" prefWidth="585.0" BorderPane.alignment="CENTER">
             <columns>
-                <TableColumn fx:id="firstnameColumn" text="Imie" />
-                <TableColumn fx:id="lastnameColumn" text="Nazwisko" />
-                <TableColumn fx:id="loginColumn" text="Login" />
+                <TableColumn fx:id="first_nameColumn" prefWidth="85.0" text="Imie" />
+                <TableColumn fx:id="last_nameColumn" prefWidth="85.0" text="Nazwisko" />
                 <TableColumn fx:id="emailColumn" prefWidth="150" text="E-mail" />
-                <TableColumn fx:id="phoneColumn" prefWidth="70.0" text="Telefon" />
-                <TableColumn fx:id="classColumn" prefWidth="40.0" text="Klasa" />
+                <TableColumn fx:id="passwordColumn" prefWidth="100.0" text="Hasło" />
+                <TableColumn fx:id="phoneColumn" prefWidth="90.0" text="Telefon" />
             </columns>
         </TableView>
     </center>
     <right>
         <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
             <children>
-                <Button fx:id="editButton" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Edytuj">
+                <Button fx:id="editButton" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Edytuj" onAction="#handleEditAction">
                     <VBox.margin>
                         <Insets bottom="5.0" left="3.0" right="3.0" top="5.0" />
                     </VBox.margin>
                 </Button>
-                <Button fx:id="deleteButton" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Usuń">
+                <Button fx:id="deleteButton" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Usuń" onAction="#handleDeleteAction">
                     <VBox.margin>
                         <Insets bottom="5.0" left="3.0" right="3.0" top="5.0" />
                     </VBox.margin>
                 </Button>
-                <Button fx:id="addButton" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Dodaj">
+                <Button fx:id="addButton" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Dodaj" onAction="#handleAddAction">
                     <VBox.margin>
                         <Insets bottom="5.0" left="3.0" right="3.0" top="5.0" />
                     </VBox.margin>

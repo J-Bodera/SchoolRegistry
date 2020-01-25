@@ -94,5 +94,11 @@ public class TeacherDAO extends GenericDAO<Teacher> {
                 .setParameter("firstName", firstName).setParameter("lastName", lastName).list().get(0);
     }
 
+    public Teacher findByTeacherEmail(String email){
+
+        return (Teacher) SessionService.getSession().createQuery("SELECT t FROM Teacher t WHERE t.email = :email")
+                .setParameter("email", email).list().get(0);
+    }
+
 
 }
