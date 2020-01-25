@@ -3,7 +3,6 @@ package pl.edu.agh.to2.dao;
 import org.hibernate.query.NativeQuery;
 import pl.edu.agh.to2.model.Student;
 import pl.edu.agh.to2.model.StudentGroup;
-import pl.edu.agh.to2.model.Teacher;
 import pl.edu.agh.to2.session.SessionService;
 import javax.persistence.PersistenceException;
 import java.util.List;

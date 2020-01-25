@@ -134,4 +134,8 @@ public class Teacher {
     {
         this.password.set(password);
     }
+
+    public String toString() {
+        return getFirstName() + " " + getLastName();
+    }
 }

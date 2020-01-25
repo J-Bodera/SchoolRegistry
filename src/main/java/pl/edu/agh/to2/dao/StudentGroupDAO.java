@@ -1,6 +1,7 @@
 package pl.edu.agh.to2.dao;
 
 import org.hibernate.query.NativeQuery;
+import pl.edu.agh.to2.model.Student;
 import pl.edu.agh.to2.model.StudentGroup;
 import pl.edu.agh.to2.model.Teacher;
 import pl.edu.agh.to2.session.SessionService;
@@ -40,9 +41,11 @@ public class StudentGroupDAO extends GenericDAO<StudentGroup> {
         return result;
     }
 
-    public List<?> findAll(){
-        NativeQuery<?> query = SessionService.getSession().createNativeQuery("FROM StudentGroup s");
-        return query.list();
+    public List<StudentGroup> findAll(){
+//        NativeQuery<?> query = SessionService.getSession().createNativeQuery("FROM StudentGroup s");
+//        return query.list();
+        return (List<StudentGroup>) SessionService.getSession().createQuery("SELECT s FROM StudentGroup s")
+                .list();
     }
 
     public StudentGroup findByName(String name){

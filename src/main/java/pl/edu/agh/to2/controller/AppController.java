@@ -8,7 +8,9 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import pl.edu.agh.to2.App;
 import pl.edu.agh.to2.model.Student;
+import pl.edu.agh.to2.model.StudentGroup;
 import pl.edu.agh.to2.model.Teacher;
+import pl.edu.agh.to2.presenter.ClassesAddDialogPresenter;
 import pl.edu.agh.to2.presenter.StudentEditDialogPresenter;
 import pl.edu.agh.to2.presenter.TeacherEditDialogPresenter;
 
@@ -206,4 +208,25 @@ public class AppController {
         }
     }
 
+    public void showClassesAddDialog(StudentGroup studentGroup) {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getClassLoader().getResource("ClassesAddDialog.fxml"));
+            BorderPane page = loader.load();
+
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Add class");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            ClassesAddDialogPresenter presenter = loader.getController();
+            presenter.setDialogStage(dialogStage);
+
+            dialogStage.showAndWait();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

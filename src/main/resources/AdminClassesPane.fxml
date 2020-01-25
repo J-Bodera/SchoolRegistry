@@ -7,36 +7,25 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
 <BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.agh.to2.controller.AdminClassesController">
-    <top>
-        <Label text="Klasy" BorderPane.alignment="CENTER">
-            <font>
-                <Font size="20.0" />
-            </font>
-            <padding>
-                <Insets bottom="10.0" top="10.0" />
-            </padding>
-        </Label>
-    </top>
     <center>
 
     </center>
     <right>
         <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
             <children>
-                <Button fx:id="editButton" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Edytuj">
+                <Button fx:id="editButton" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#handleEditAction" prefHeight="25.0" prefWidth="94.0" text="Edytuj">
                     <VBox.margin>
                         <Insets bottom="5.0" left="3.0" right="3.0" top="5.0" />
                     </VBox.margin>
                 </Button>
-                <Button fx:id="deleteButton" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Usuń">
+                <Button fx:id="deleteButton" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#handleDeleteAction" prefHeight="25.0" prefWidth="94.0" text="Usuń">
                     <VBox.margin>
                         <Insets bottom="5.0" left="3.0" right="3.0" top="5.0" />
                     </VBox.margin>
                 </Button>
-                <Button fx:id="addButton" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Dodaj">
+                <Button fx:id="addButton" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#handleAddAction" prefHeight="25.0" prefWidth="94.0" text="Dodaj">
                     <VBox.margin>
                         <Insets bottom="5.0" left="3.0" right="3.0" top="5.0" />
                     </VBox.margin>
@@ -48,4 +37,31 @@
                 </Button>
             </children></VBox>
     </right>
+    <center>
+        <TableView fx:id="studentGroupTable" prefHeight="350.0" prefWidth="253.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="classColumn" prefWidth="150.66662085056305" text="Klasa" />
+                <TableColumn fx:id="teacherColumn" prefWidth="348.0000762939453" text="Nauczyciel" />
+            </columns>
+        </TableView>
+    </center>
+<!--   <left>-->
+<!--      <TableView fx:id="studentGroupTable" prefHeight="350.0" prefWidth="253.0" BorderPane.alignment="CENTER">-->
+<!--        <columns>-->
+<!--          <TableColumn fx:id="classColumn" prefWidth="94.66668951511383" text="Klasa" />-->
+<!--          <TableColumn fx:id="teacherColumn" prefWidth="159.33333587646484" text="Nauczyciel" />-->
+<!--        </columns>-->
+<!--      </TableView>-->
+<!--   </left>-->
+<!--   <center>-->
+<!--      <TableView fx:id="studentsTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">-->
+<!--        <columns>-->
+<!--          <TableColumn fx:id="student_firstnameColumn" prefWidth="122.00007379055023" text="Imię" />-->
+<!--          <TableColumn fx:id="student_lastnameColumn" prefWidth="123.33332061767578" text="Nazwisko" />-->
+<!--        </columns>-->
+<!--      </TableView>-->
+<!--   </center>-->
+   <top>
+      <Label prefHeight="44.0" prefWidth="33.0" text="Klasy" BorderPane.alignment="CENTER" />
+   </top>
 </BorderPane>
