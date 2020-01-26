@@ -154,4 +154,8 @@ public class Student {
 //    public void setNumber(int number) {
 //        this.number.set(number);
 //    }
+
+    public String toString() {
+        return getFirstName() + " " + getLastName();
+    }
 }

@@ -11,6 +11,7 @@ import pl.edu.agh.to2.model.Student;
 import pl.edu.agh.to2.model.StudentGroup;
 import pl.edu.agh.to2.model.Teacher;
 import pl.edu.agh.to2.presenter.ClassesAddDialogPresenter;
+import pl.edu.agh.to2.presenter.GroupCreateDialogPresenter;
 import pl.edu.agh.to2.presenter.StudentEditDialogPresenter;
 import pl.edu.agh.to2.presenter.TeacherEditDialogPresenter;
 
@@ -223,6 +224,29 @@ public class AppController {
 
             ClassesAddDialogPresenter presenter = loader.getController();
             presenter.setDialogStage(dialogStage);
+
+            dialogStage.showAndWait();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void showGroupCreateDialog(StudentGroup studentGroup) {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getClassLoader().getResource("GroupCreateDialog.fxml"));
+            BorderPane page = loader.load();
+
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Add class");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            GroupCreateDialogPresenter presenter = loader.getController();
+            presenter.setDialogStage(dialogStage);
+            presenter.setGroupName(studentGroup);
 
             dialogStage.showAndWait();
         } catch (IOException e) {

@@ -77,7 +77,12 @@ public class AdminClassesController {
 
     @FXML
     public void handleEditAction(ActionEvent event) {
+        StudentGroup studentGroup = studentGroupTable.getSelectionModel().getSelectedItem();
+        StudentGroupDAO studentGroupDAO = new StudentGroupDAO();
 
+        if(studentGroup != null) {
+            appController.showGroupCreateDialog(studentGroup);
+        }
     }
 
     @FXML

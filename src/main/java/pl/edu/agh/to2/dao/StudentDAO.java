@@ -65,6 +65,33 @@ public class StudentDAO extends GenericDAO<Student> {
         SessionService.getEntityTransaction().commit();
     }
 
+    public void update(Student student, StudentGroup studentGroup){
+        SessionService.getEntityTransaction().begin();
+
+        int studentId = student.getStudentId();
+        String firstName = student.getFirstName();
+        String lastName = student.getLastName();
+        String phone = student.getPhone();
+        String email = student.getEmail();
+        String password = student.getPassword();
+
+        SessionService.getEntityManager().createNativeQuery("UPDATE Student set first_name = :firstName "
+                + "WHERE student_id = :studentId").setParameter("studentId", studentId).setParameter("firstName", firstName).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Student set last_name = :lastName "
+                + "WHERE student_id = :studentId").setParameter("studentId", studentId).setParameter("lastName", lastName).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Student set phone = :phone "
+                + "WHERE student_id = :studentId").setParameter("studentId", studentId).setParameter("phone", phone).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Student set email = :email "
+                + "WHERE student_id = :studentId").setParameter("studentId", studentId).setParameter("email", email).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Student set password = :password "
+                + "WHERE student_id = :studentId").setParameter("studentId", studentId).setParameter("password", password).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Student set studentGroup_student_group_id = :studentGroup "
+                + "WHERE student_id = :studentId").setParameter("studentId", studentId).setParameter("studentGroup", studentGroup).executeUpdate();
+//        SessionService.getEntityManager().createNativeQuery("UPDATE Student set number = :number "
+//                + "WHERE student_id = :studentId").setParameter("studentId", studentId).setParameter("number", number).executeUpdate();
+        SessionService.getEntityTransaction().commit();
+    }
+
     /**
      * @param id
      * @return
