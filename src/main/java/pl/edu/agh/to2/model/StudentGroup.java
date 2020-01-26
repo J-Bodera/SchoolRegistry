@@ -12,6 +12,7 @@ public class StudentGroup {
     private IntegerProperty studentGroupId = new SimpleIntegerProperty();
     private StringProperty name;
     private SimpleObjectProperty<Teacher> tutor;
+    private StringProperty tutorName;
     private Set<Course> courses;
 
     public StudentGroup(){}
@@ -19,6 +20,7 @@ public class StudentGroup {
     public StudentGroup(String name, Teacher tutor) {
         this.name = new SimpleStringProperty(name);
         this.tutor = new SimpleObjectProperty<>(tutor);
+        this.tutorName = new SimpleStringProperty(tutor.toString());
     }
 
     public static class Columns {
@@ -61,6 +63,10 @@ public class StudentGroup {
 
     public SimpleObjectProperty<Teacher> tutorProperty() {
         return tutor;
+    }
+
+    public StringProperty tutorNameProperty() {
+        return tutorName;
     }
 
     public void setTutor(Teacher tutor) {

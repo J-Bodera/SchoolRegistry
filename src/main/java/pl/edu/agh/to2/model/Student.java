@@ -15,19 +15,28 @@ public class Student {
     private StringProperty email;
     private StringProperty password;
     private Property<StudentGroup> studentGroup;
-    private IntegerProperty number;
+//    private IntegerProperty number;
 
     public Student() {
     }
 
-    public Student(String firstName, String lastName, String phone, String email, String password, StudentGroup studentGroup, int number) {
+    public Student(String firstName, String lastName, String phone, String email, String password, StudentGroup studentGroup) {
         this.studentGroup = new SimpleObjectProperty<>(studentGroup);
-        this.number = new SimpleIntegerProperty(number);
+//        this.number = new SimpleIntegerProperty(number);
         this.firstName = new SimpleStringProperty(firstName);
         this.lastName = new SimpleStringProperty(lastName);
         this.phone = new SimpleStringProperty(phone);
         this.email = new SimpleStringProperty(email);
         this.password = new SimpleStringProperty(password);
+    }
+
+    public Student(String firstName, String lastName, String phone, String email, String password) {
+        this.firstName = new SimpleStringProperty(firstName);
+        this.lastName = new SimpleStringProperty(lastName);
+        this.phone = new SimpleStringProperty(phone);
+        this.email = new SimpleStringProperty(email);
+        this.password = new SimpleStringProperty(password);
+        this.studentGroup = new SimpleObjectProperty<>();
     }
 
     public static class Columns {
@@ -133,16 +142,20 @@ public class Student {
         this.studentGroup.setValue(studentGroup);
     }
 
-    @Column(name = Columns.NUMBER)
-    public int getNumber() {
-        return number.get();
-    }
+//    @Column(name = Columns.NUMBER)
+//    public int getNumber() {
+//        return number.get();
+//    }
+//
+//    public IntegerProperty numberProperty() {
+//        return number;
+//    }
+//
+//    public void setNumber(int number) {
+//        this.number.set(number);
+//    }
 
-    public IntegerProperty numberProperty() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number.set(number);
+    public String toString() {
+        return getFirstName() + " " + getLastName();
     }
 }

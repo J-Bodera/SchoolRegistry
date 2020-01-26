@@ -18,8 +18,41 @@ public class TeacherDAO extends GenericDAO<Teacher> {
         }
     }
 
+    public boolean create(Teacher teacher) {
+        try {
+            save(teacher);
+            return true;
+        } catch (PersistenceException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
     public void update(int teacherId, String firstName, String lastName, String phone, String email, String password){
         SessionService.getEntityTransaction().begin();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Teacher set first_name = :firstName "
+                + "WHERE teacher_id = :teacherId").setParameter("teacherId", teacherId).setParameter("firstName", firstName).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Teacher set last_name = :lastName "
+                + "WHERE teacher_id = :teacherId").setParameter("teacherId", teacherId).setParameter("lastName", lastName).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Teacher set phone = :phone "
+                + "WHERE teacher_id = :teacherId").setParameter("teacherId", teacherId).setParameter("phone", phone).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Teacher set email = :email "
+                + "WHERE teacher_id = :teacherId").setParameter("teacherId", teacherId).setParameter("email", email).executeUpdate();
+        SessionService.getEntityManager().createNativeQuery("UPDATE Teacher set password = :password "
+                + "WHERE teacher_id = :teacherId").setParameter("teacherId", teacherId).setParameter("password", password).executeUpdate();
+        SessionService.getEntityTransaction().commit();
+    }
+
+    public void update(Teacher teacher){
+        SessionService.getEntityTransaction().begin();
+
+        int teacherId = teacher.getTeacherId();
+        String firstName = teacher.getFirstName();
+        String lastName = teacher.getLastName();
+        String phone = teacher.getPhone();
+        String email = teacher.getEmail();
+        String password = teacher.getPassword();
+
         SessionService.getEntityManager().createNativeQuery("UPDATE Teacher set first_name = :firstName "
                 + "WHERE teacher_id = :teacherId").setParameter("teacherId", teacherId).setParameter("firstName", firstName).executeUpdate();
         SessionService.getEntityManager().createNativeQuery("UPDATE Teacher set last_name = :lastName "
@@ -42,12 +75,11 @@ public class TeacherDAO extends GenericDAO<Teacher> {
         System.out.println("Rows affected: " + result);
         SessionService.getEntityTransaction().commit();
         return result;
-
     }
 
-    public List<?> findAll(){
-        NativeQuery<?>  query = SessionService.getSession().createNativeQuery("FROM Teacher t");
-        return query.list();
+    public List<Teacher> findAll(){
+        return (List<Teacher>) SessionService.getSession().createQuery("SELECT t FROM Teacher t")
+                .list();
     }
 
     public Teacher findByTeacherId(int teacherId){
@@ -60,6 +92,12 @@ public class TeacherDAO extends GenericDAO<Teacher> {
 
         return (Teacher) SessionService.getSession().createQuery("SELECT t FROM Teacher t WHERE t.firstName = :firstName AND t.lastName = :lastName")
                 .setParameter("firstName", firstName).setParameter("lastName", lastName).list().get(0);
+    }
+
+    public Teacher findByTeacherEmail(String email){
+
+        return (Teacher) SessionService.getSession().createQuery("SELECT t FROM Teacher t WHERE t.email = :email")
+                .setParameter("email", email).list().get(0);
     }
 
 

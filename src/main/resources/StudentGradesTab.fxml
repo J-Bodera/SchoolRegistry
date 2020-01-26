@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.agh.to2.controller.StudentGradeController">
+    <top>
+    </top>
+    <center>
+        <TableView fx:id="gradesTable" prefHeight="350.0" prefWidth="585.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="courseColumn" prefWidth="90" text="Przedmiot" />
+                <TableColumn fx:id="gradeColumn" prefWidth="90" text="Ocena" />
+                <TableColumn fx:id="commentColumn" prefWidth="90" text="Komentarz" />
+                <TableColumn fx:id="dateColumn" prefWidth="150" text="Data" />
+                <TableColumn fx:id="teacherColumn" prefWidth="80" text="Nauczyciel" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

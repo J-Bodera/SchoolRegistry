@@ -20,5 +20,6 @@
 		<mapping class="pl.edu.agh.to2.model.Remark"/>
 		<mapping class="pl.edu.agh.to2.model.StudentGroup"/>
 		<mapping class="pl.edu.agh.to2.model.Course"/>
+		<mapping class="pl.edu.agh.to2.model.Attendance"/>
 	</session-factory>
 </hibernate-configuration>

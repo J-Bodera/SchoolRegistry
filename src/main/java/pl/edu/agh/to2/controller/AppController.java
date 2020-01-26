@@ -2,12 +2,21 @@ package pl.edu.agh.to2.controller;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.Tab;
+import javafx.scene.control.TabPane;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import pl.edu.agh.to2.App;
+import pl.edu.agh.to2.model.Student;
+import pl.edu.agh.to2.model.StudentGroup;
 import pl.edu.agh.to2.model.Teacher;
+import pl.edu.agh.to2.presenter.ClassesAddDialogPresenter;
+import pl.edu.agh.to2.presenter.GroupCreateDialogPresenter;
+import pl.edu.agh.to2.presenter.StudentEditDialogPresenter;
 import pl.edu.agh.to2.presenter.TeacherEditDialogPresenter;
 
 import java.io.IOException;
@@ -74,14 +83,18 @@ public class AppController {
         }
     }
 
-    public boolean showTeacherEditDialog(Teacher teacher) {
+    public void showTeacherEditDialog(Teacher teacher) {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(App.class.getClassLoader().getResource("TeacherEditDialog.fxml"));
             BorderPane page = loader.load();
 
             Stage dialogStage = new Stage();
-            dialogStage.setTitle("Edit teacher");
+            if(teacher.getFirstName().equals("")) {
+                dialogStage.setTitle("Add teacher");
+            } else {
+                dialogStage.setTitle("Edit teacher");
+            }
             dialogStage.initModality(Modality.WINDOW_MODAL);
             dialogStage.initOwner(primaryStage);
             Scene scene = new Scene(page);
@@ -92,10 +105,8 @@ public class AppController {
             presenter.setData(teacher);
 
             dialogStage.showAndWait();
-            return presenter.isApproved();
         } catch (IOException e) {
             e.printStackTrace();
-            return false;
         }
     }
 
@@ -113,6 +124,33 @@ public class AppController {
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (IOException e ) {
+            e.printStackTrace();
+        }
+    }
+
+    public void showStudentEditDialog(Student student) {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getClassLoader().getResource("StudentEditDialog.fxml"));
+            BorderPane page = loader.load();
+
+            Stage dialogStage = new Stage();
+            if(student.getFirstName().equals("")) {
+                dialogStage.setTitle("Add student");
+            } else {
+                dialogStage.setTitle("Edit student");
+            }
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            StudentEditDialogPresenter presenter = loader.getController();
+            presenter.setDialogStage(dialogStage);
+            presenter.setData(student);
+
+            dialogStage.showAndWait();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -142,8 +180,8 @@ public class AppController {
             loader.setLocation(App.class.getClassLoader().getResource("TeacherPane.fxml"));
             BorderPane TeacherLayout = loader.load();
 
-//            TeacherController controller = loader.getController();
-//            controller.setAppController(this);
+            TeacherController controller = loader.getController();
+            controller.setAppController(this);
 
             Scene scene = new Scene(TeacherLayout);
             primaryStage.setScene(scene);
@@ -154,15 +192,17 @@ public class AppController {
     }
 
 
-    public void showStudentLayout() {
+    public void showStudentLayout(Student student) {
         try {
             this.primaryStage.setTitle("Panel ucznia");
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(App.class.getClassLoader().getResource("StudentPane.fxml"));
             BorderPane StudentLayout = loader.load();
 
-//            StudentController controller = loader.getController();
-//            controller.setAppController(this);
+
+            StudentController controller = loader.getController();
+            controller.setStudent(student);
+            controller.setAppController(this);
 
             Scene scene = new Scene(StudentLayout);
             primaryStage.setScene(scene);
@@ -172,4 +212,47 @@ public class AppController {
         }
     }
 
+    public void showClassesAddDialog(StudentGroup studentGroup) {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getClassLoader().getResource("ClassesAddDialog.fxml"));
+            BorderPane page = loader.load();
+
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Add class");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            ClassesAddDialogPresenter presenter = loader.getController();
+            presenter.setDialogStage(dialogStage);
+
+            dialogStage.showAndWait();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public void showGroupCreateDialog(StudentGroup studentGroup) {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getClassLoader().getResource("GroupCreateDialog.fxml"));
+            BorderPane page = loader.load();
+
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Add class");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            GroupCreateDialogPresenter presenter = loader.getController();
+            presenter.setDialogStage(dialogStage);
+            presenter.setGroupName(studentGroup);
+
+            dialogStage.showAndWait();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.agh.to2.controller.StudentController">
+    <top>
+        <Label text="Panel Ucznia" BorderPane.alignment="CENTER">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <padding>
+                <Insets bottom="10.0" top="10.0" />
+            </padding>
+        </Label>
+    </top>
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Oceny">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="gradesTable" prefHeight="321.0" prefWidth="600.0">
+                          <columns>
+                            <TableColumn fx:id="grCourseColumn" prefWidth="110.0" text="Przedmiot" />
+                            <TableColumn fx:id="grGradeColumn" prefWidth="70.0" text="Ocena" />
+                              <TableColumn fx:id="grCommentColumn" prefWidth="200.0" text="Komentarz" />
+                              <TableColumn fx:id="grDateColumn" prefWidth="100.0" text="Data" />
+                              <TableColumn fx:id="grTeacherColumn" prefWidth="120.0" text="Nauczyciel" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Obecności">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="attendanceTable" prefHeight="320.0" prefWidth="600.0">
+                          <columns>
+                            <TableColumn fx:id="attDateColumn" prefWidth="120.0" text="Data" />
+                            <TableColumn fx:id="attCourseColumn" prefWidth="170.0" text="Przedmiot" />
+                              <TableColumn fx:id="attTeacherColumn" prefWidth="150.0" text="Nauczyciel" />
+                              <TableColumn fx:id="attAttendanceColumn" prefWidth="150.0" text="Obecność" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <bottom>
+      <Button fx:id="logoutButton" mnemonicParsing="false" text="Wyloguj" BorderPane.alignment="CENTER_RIGHT" onAction="#handleLogoutAction">
+         <BorderPane.margin>
+            <Insets bottom="5.0" right="10.0" top="5.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+</BorderPane>

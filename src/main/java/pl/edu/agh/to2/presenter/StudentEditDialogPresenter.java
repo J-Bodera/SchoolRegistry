@@ -4,11 +4,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import pl.edu.agh.to2.dao.TeacherDAO;
-import pl.edu.agh.to2.model.Teacher;
+import pl.edu.agh.to2.dao.StudentDAO;
+import pl.edu.agh.to2.model.Student;
 
-public class TeacherEditDialogPresenter {
-    private Teacher teacher;
+public class StudentEditDialogPresenter {
+    private Student student;
 
     @FXML
     private TextField first_nameTextField;
@@ -35,8 +35,8 @@ public class TeacherEditDialogPresenter {
         System.out.println(this.dialogStage.getTitle());
     }
 
-    public void setData(Teacher teacher) {
-        this.teacher = teacher;
+    public void setData(Student student) {
+        this.student = student;
         updateControls();
     }
 
@@ -47,7 +47,7 @@ public class TeacherEditDialogPresenter {
     @FXML
     private void handleOkAction(ActionEvent event) {
         if (isInputValid()) {
-            updateTeacher();
+            updateStudent();
             approved = true;
             dialogStage.close();
         }
@@ -64,28 +64,28 @@ public class TeacherEditDialogPresenter {
         return true;
     }
 
-    private void updateTeacher() {
-        TeacherDAO teacherDAO = new TeacherDAO();
-        String fn= teacher.getFirstName();
+    private void updateStudent() {
+        StudentDAO studentDAO = new StudentDAO();
+        String fn = student.getFirstName();
 
-        teacher.setFirstName(first_nameTextField.getText());
-        teacher.setLastName(last_nameTextField.getText());
-        teacher.setEmail(emailTextField.getText());
-        teacher.setPassword(passwordTextField.getText());
-        teacher.setPhone(phoneTextField.getText());
+        student.setFirstName(first_nameTextField.getText());
+        student.setLastName(last_nameTextField.getText());
+        student.setEmail(emailTextField.getText());
+        student.setPassword(passwordTextField.getText());
+        student.setPhone(phoneTextField.getText());
 
         if (fn==""){
-            teacherDAO.create(teacher.getFirstName(), teacher.getLastName(), teacher.getPhone(), teacher.getEmail(), teacher.getPassword());
+            studentDAO.create(student.getFirstName(), student.getLastName(), student.getPhone(), student.getEmail(), student.getPassword());
         }
 
-        teacherDAO.update(teacher);
+        studentDAO.update(student);
     }
 
     private void updateControls() {
-        first_nameTextField.setText(teacher.getFirstName());
-        last_nameTextField.setText(teacher.getLastName());
-        emailTextField.setText(teacher.getEmail());
-        passwordTextField.setText(teacher.getPassword());
-        phoneTextField.setText(teacher.getPhone());
+        first_nameTextField.setText(student.getFirstName());
+        last_nameTextField.setText(student.getLastName());
+        emailTextField.setText(student.getEmail());
+        passwordTextField.setText(student.getPassword());
+        phoneTextField.setText(student.getPhone());
     }
 }

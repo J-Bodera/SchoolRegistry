@@ -12,9 +12,9 @@ import java.util.List;
 
 public class GradeDAO extends GenericDAO<Grade> {
 
-    public boolean create(int grade, Student student, Teacher teacher, Course course, String comment) {
+    public boolean create(int grade, Student student, Teacher teacher, Course course, String comment, Date date) {
         try {
-            save(new Grade(grade, student, teacher,  course, comment, new Date()));
+            save(new Grade(grade, student, teacher,  course, comment, date));
             return true;
         } catch (PersistenceException e) {
             e.printStackTrace();
@@ -47,15 +47,13 @@ public class GradeDAO extends GenericDAO<Grade> {
         return result;
     }
 
-    public List<?> findAll(){
-        NativeQuery<?> query = SessionService.getSession().createNativeQuery("FROM Grade g");
-        return query.list();
+    public List<Grade> findAll(){
+        return (List<Grade>) SessionService.getSession().createQuery("SELECT g FROM Grade g").list();
     }
 
-    public List<?> findAllForStudent(Student student){
-        NativeQuery<?> query = SessionService.getSession().createNativeQuery("FROM Grade g WHERE g.student = :student")
-                .setParameter("student", student);
-        return query.list();
+    public List<Grade> findAllForStudent(Student student){
+        return (List<Grade>) SessionService.getSession().createQuery("FROM Grade g WHERE g.student = :student").setParameter("student", student).list();
+
     }
 
 }

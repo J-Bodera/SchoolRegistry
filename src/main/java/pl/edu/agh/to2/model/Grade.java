@@ -2,6 +2,7 @@ package pl.edu.agh.to2.model;
 
 import javafx.beans.property.*;
 import javax.persistence.*;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Entity
@@ -59,6 +60,10 @@ public class Grade {
         return grade;
     }
 
+    public StringProperty gradeStringProperty() {
+        return new SimpleStringProperty(Integer.toString(grade.get()));
+    }
+
     public void setGrade(int grade) {
         this.grade.set(grade);
     }
@@ -85,6 +90,10 @@ public class Grade {
         return teacher;
     }
 
+    public StringProperty teacherStringProperty() {
+        return new SimpleStringProperty(teacher.get().getFirstName() + " " + teacher.get().getLastName());
+    }
+
     public void setTeacher(Teacher teacher) {
         this.teacher.set(teacher);
     }
@@ -96,6 +105,10 @@ public class Grade {
 
     public ObjectProperty<Course> courseProperty() {
         return course;
+    }
+
+    public StringProperty courseStringProperty() {
+        return new SimpleStringProperty(course.get().getCourseName());
     }
 
     public void setCourse(Course course) {
@@ -122,6 +135,10 @@ public class Grade {
 
     public ObjectProperty<Date> dateProperty() {
         return date;
+    }
+
+    public StringProperty dateStringProperty() {
+        return new SimpleStringProperty(new SimpleDateFormat("dd/MM/yyyy").format(date.get()));
     }
 
     public void setDate(Date date) {

@@ -10,7 +10,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import pl.edu.agh.to2.dao.TeacherDAO;
 import pl.edu.agh.to2.model.Teacher;
-import pl.edu.agh.to2.session.SessionService;
 
 public class AdminTeachersController {
     private AppController appController;
@@ -37,10 +36,10 @@ public class AdminTeachersController {
     private TableColumn<Teacher, String> emailColumn;
 
     @FXML
-    private TableColumn<Teacher, String> passwordColumn;
+    private Button editButton;
 
     @FXML
-    private Button editButton;
+    private Button deleteButton;
 
     @FXML
     private void initialize() {
@@ -50,17 +49,22 @@ public class AdminTeachersController {
         last_nameColumn.setCellValueFactory(data -> data.getValue().lastNameProperty());
         phoneColumn.setCellValueFactory(data -> data.getValue().phoneProperty());
         emailColumn.setCellValueFactory(data -> data.getValue().emailProperty());
-        passwordColumn.setCellValueFactory(data -> data.getValue().passwordProperty());
 
         teachersTable.setItems(teachers);
         editButton.disableProperty().bind(
                 Bindings.size(
                         teachersTable.getSelectionModel()
-                            .getSelectedItems()).isNotEqualTo(1));
+                                .getSelectedItems()).isNotEqualTo(1));
+
+        deleteButton.disableProperty().bind(
+                Bindings.size(
+                        teachersTable.getSelectionModel()
+                                .getSelectedItems()).isNotEqualTo(1));
+
     }
 
     private ObservableList<Teacher> teachers = FXCollections.observableArrayList(
-            new TeacherDAO().findByTeacherName("Anna", "Nowak"));
+            new TeacherDAO().findAll());
 
     @FXML
     private void handlePrevAction(){
@@ -77,11 +81,20 @@ public class AdminTeachersController {
 
     @FXML
     private void handleDeleteAction() {
+        Teacher teacher = teachersTable.getSelectionModel().getSelectedItem();
+        TeacherDAO teacherDAO = new TeacherDAO();
+
+        if(teacher != null ) {
+            teacherDAO.delete(teacher.getTeacherId());
+            teachers.remove(teacher);
+        }
 
     }
 
     @FXML
     private void handleAddAction() {
-
+        Teacher teacher= new Teacher("","","","","");
+        teachers.add(teacher);
+        appController.showTeacherEditDialog(teacher);
     }
 }
